@@ -67,7 +67,11 @@ main { outline: none; }
   -webkit-backdrop-filter: saturate(1.4) blur(12px);
   border-bottom: 1px solid var(--line);
 }
-.brand { font-weight: 700; font-size: 1.15rem; text-decoration: none; letter-spacing: -.01em; }
+.brand { font-weight: 700; font-size: 1.15rem; text-decoration: none; letter-spacing: -.01em; display: inline-flex; align-items: center; gap: 8px; }
+.brand .ic { width: 22px; height: 22px; color: var(--accent); }
+
+/* Piktogramme: erben Farbe und Grösse vom Text */
+.ic { width: 1.1em; height: 1.1em; flex: none; vertical-align: -.18em; }
 .theme-toggle {
   display: inline-grid; place-items: center;
   width: 40px; height: 40px; border-radius: 50%;
@@ -168,8 +172,8 @@ main { outline: none; }
   display: grid; place-items: center;
   background: var(--ph, linear-gradient(135deg, #d9e8dc, #b9d4c1));
 }
-.placeholder span { font-size: clamp(3rem, 9vw, 6rem); filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .15)); }
-.card .placeholder span { font-size: 3.6rem; }
+.placeholder .ic { width: clamp(64px, 12vw, 104px); height: auto; color: rgba(40, 45, 35, .55); stroke-width: 1.5; }
+.card .placeholder .ic { width: 64px; }
 
 /* ---------- Rezeptseite ---------- */
 .hero { position: relative; height: clamp(240px, 46vh, 460px); }
@@ -318,3 +322,15 @@ h2.section { font-size: 1.25rem; margin: 0 0 12px; letter-spacing: -.01em; }
   .chips::-webkit-scrollbar { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Piktogramm + Text nebeneinander */
+.chip, .stat, .card .facts span, .hero .back, .toggle button, .cook-nav button, .wakelock {
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.toggle button, .cook-nav button { justify-content: center; }
+.stat .ic { color: var(--accent); }
+.card .facts .ic { width: 1em; height: 1em; }
+.search .clear, .sheet-head button { display: inline-grid; place-items: center; }
+.cook-done .big { color: var(--accent); }
+.cook-done .big .ic { width: 64px; height: 64px; }
+.search .clear[hidden] { display: none; }

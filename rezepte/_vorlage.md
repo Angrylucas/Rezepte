@@ -8,7 +8,6 @@ ballaststoffe: 8
 zeit: 30
 tags: Hauptmahlzeit, Geflügel
 saison: ganzjährig
-emoji: 🍽️
 bild:
 bildsuche: grilled chicken vegetables
 ---

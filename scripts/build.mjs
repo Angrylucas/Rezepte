@@ -97,7 +97,6 @@ export function parseRecipe(src, slug) {
     zeitHinweis: meta.zeit_hinweis || null,
     tags: list(meta.tags),
     saison: list(meta.saison),
-    emoji: meta.emoji || '🍽️',
     bild: meta.bild || null,
     bildKlein: meta.bild || null,
     bildQuelle: null,
