@@ -30,7 +30,6 @@ Private Rezept-Website mit gesunden, proteinreichen Rezepten. Statische Seite oh
 | `zeit`, `zeit_hinweis` | Minuten, plus optionaler Hinweis wie `plus 4 Std. marinieren` |
 | `tags` | Für die Filter: Hauptmahlzeit, Frühstück, Suppe, Dessert, Backen, Geflügel, Fisch, Fleisch, Vegetarisch |
 | `saison` | Frühling, Sommer, Herbst, Winter oder ganzjährig. Steuert den Filter „Saisonal“ |
-| `emoji` | Wird als Platzhalter gezeigt, solange kein Bild vorhanden ist |
 | `bild` | Optional: Pfad oder Link zu einem Bild |
 | `bildsuche` | Optional: Suchbegriff für Unsplash (Englisch funktioniert am besten) |
 
@@ -46,7 +45,7 @@ Bilder kommen automatisch, in dieser Reihenfolge:
 1. **`bild:` im Rezept**: ein Link zu einem beliebigen Foto (z. B. `bild: https://…/foto.jpg`) oder ein Pfad im Repo.
 2. **Datei in `bilder/`**: `bilder/<dateiname-des-rezepts>.jpg` (oder .png/.webp) wird automatisch verwendet.
 3. **Unsplash-Suche**: Beim Bauen sucht die Website mit dem Begriff aus `bildsuche:` (am besten auf Englisch, z. B. `pumpkin soup`) ein passendes Foto auf Unsplash. Dafür muss in Vercel die Umgebungsvariable `UNSPLASH_ACCESS_KEY` gesetzt sein (kostenloser Schlüssel unter https://unsplash.com/developers). Der Fotograf wird im Bild genannt.
-4. Sonst: farbiger Platzhalter mit dem `emoji`.
+4. Sonst: farbiger Platzhalter mit einem Piktogramm der Kategorie.
 
 Mehrere Begriffe mit `|` trennen (z. B. `thai basil chicken | thai stir fry`): der erste mit Treffer wird genommen. Gefällt ein Unsplash-Foto nicht, den Begriff ändern oder mit `bild:` ein eigenes Foto verlinken.
 

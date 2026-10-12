@@ -10,6 +10,34 @@ const servingsBySlug = {};
 let wakeLock = null;
 let cleanup = [];
 
+/* ---------- Piktogramme (Linien-Icons, 24×24, im Stil von Lucide) ---------- */
+
+const ICON_PATHS = {
+  clock: '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+  flame: '<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',
+  dumbbell: '<path d="M6 6v12M18 6v12M2.5 9v6M21.5 9v6M6 12h12"/>',
+  wheat: '<path d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"/><path d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/><path d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"/>',
+  sprout: '<path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  leaf: '<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
+  snowflake: '<path d="M2 12h20M12 2v20M20 16l-4-4 4-4M4 8l4 4-4 4M16 4l-4 4-4-4M8 20l4-4 4 4"/>',
+  zap: '<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>',
+  book: '<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+  chefHat: '<path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.46.32-.84.73-1.04a4 4 0 0 0-2.13-7.59 5 5 0 0 0-9.19 0 4 4 0 0 0-2.13 7.59c.41.2.72.58.72 1.04V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/>',
+  check: '<circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>',
+  x: '<path d="M18 6 6 18M6 6l12 12"/>',
+  arrowLeft: '<path d="m12 19-7-7 7-7M19 12H5"/>',
+  arrowRight: '<path d="M5 12h14M12 5l7 7-7 7"/>',
+  coffee: '<path d="M10 2v2M14 2v2M6 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/>',
+  soup: '<path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"/><path d="M7 21h10"/><path d="M19.5 12 22 6"/><path d="M16.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.73 1.62"/><path d="M11.25 3c.27.1.8.53.74 1.36-.05.83-.93 1.2-.98 2.02-.06.78.33 1.24.72 1.62"/><path d="M6.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.74 1.62"/>',
+  drumstick: '<path d="M15.4 15.63a7.88 6 135 1 1 6.23-6.23 4.5 3.43 135 0 0-6.23 6.23"/><path d="m8.29 12.71-2.6 2.6a2.5 2.5 0 1 0-1.65 4.65A2.5 2.5 0 1 0 8.7 18.3l2.59-2.59"/>',
+  fish: '<path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"/><path d="M18 12v.5"/><path d="M16 17.93a9.77 9.77 0 0 1 0-11.86"/><path d="M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33"/>',
+  beef: '<circle cx="12.5" cy="8.5" r="2.5"/><path d="M12.5 2a6.5 6.5 0 0 0-6.22 4.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3A6.5 6.5 0 0 0 12.5 2Z"/><path d="m18.5 6 2.19 4.5a6.48 6.48 0 0 1 .31 2 6.49 6.49 0 0 1-2.6 5.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5"/>',
+  utensils: '<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>',
+};
+const icon = (name, cls = '') =>
+  `<svg class="ic${cls ? ' ' + cls : ''}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON_PATHS[name] || ICON_PATHS.utensils}</svg>`;
+
 /* ---------- Hilfsfunktionen ---------- */
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -31,8 +59,17 @@ function currentSeason(d = new Date()) {
   return 'Winter';
 }
 const SEASON = currentSeason();
-const SEASON_ICON = { Frühling: '🌱', Sommer: '☀️', Herbst: '🍂', Winter: '❄️' }[SEASON];
+const SEASON_ICON = { Frühling: 'sprout', Sommer: 'sun', Herbst: 'leaf', Winter: 'snowflake' }[SEASON];
 
+// Piktogramm pro Kategorie für Rezepte ohne Foto.
+const CATEGORY_ICON = {
+  'Frühstück': 'coffee',
+  'Suppen': 'soup',
+  'Poulet & Truten': 'drumstick',
+  'Fisch': 'fish',
+  'Fleisch': 'beef',
+  'Backen': 'wheat',
+};
 const PLACEHOLDER = {
   'Frühstück': ['#f6e7c8', '#efc98f'],
   'Suppen': ['#f8dcc4', '#eaa979'],
@@ -51,7 +88,7 @@ function media(r, eager = false) {
     return `<div class="media"><img src="${esc(src)}" alt="${esc(r.titel)}" ${eager ? '' : 'loading="lazy"'} decoding="async">${credit}</div>`;
   }
   const [a, b] = PLACEHOLDER[r.kategorie] || ['#dfe9e1', '#b5cfbd'];
-  return `<div class="media"><div class="placeholder" style="--ph: linear-gradient(135deg, ${a}, ${b})"><span aria-hidden="true">${esc(r.emoji)}</span></div></div>`;
+  return `<div class="media"><div class="placeholder" style="--ph: linear-gradient(135deg, ${a}, ${b})">${icon(CATEGORY_ICON[r.kategorie] || 'utensils')}</div></div>`;
 }
 
 const fmtTime = (min) => (min >= 60 ? `${Math.floor(min / 60)} Std.${min % 60 ? ' ' + (min % 60) + ' Min.' : ''}` : `${min} Min.`);
@@ -135,8 +172,8 @@ const FILTERS = [
   { id: 'Fisch', label: 'Fisch' },
   { id: 'Fleisch', label: 'Fleisch' },
   { id: 'Vegetarisch', label: 'Vegetarisch' },
-  { id: '_saison', label: `${SEASON_ICON} Saisonal` },
-  { id: '_schnell', label: '⚡ Schnell (bis 30 Min.)' },
+  { id: '_saison', label: 'Saisonal', icon: SEASON_ICON },
+  { id: '_schnell', label: 'Schnell (bis 30 Min.)', icon: 'zap' },
 ];
 
 function matchesFilter(r, id) {
@@ -162,8 +199,8 @@ function filtered() {
 
 function card(r) {
   const facts = [
-    r.zeit ? `⏱ ${fmtTime(r.zeit)}` : '',
-    r.protein ? `💪 ${r.protein} g Protein` : '',
+    r.zeit ? `${icon('clock')}${fmtTime(r.zeit)}` : '',
+    r.protein ? `${icon('dumbbell')}${r.protein} g Protein` : '',
     r.kcal ? `${r.kcal} kcal` : '',
   ].filter(Boolean).map((f) => `<span>${f}</span>`).join('');
   return `<a class="card" href="#/rezept/${encodeURIComponent(r.slug)}">
@@ -187,10 +224,10 @@ function renderHome() {
     <div class="search" role="search">
       <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" placeholder="Rezept oder Zutat suchen …" value="${esc(home.query)}" autocomplete="off" aria-label="Rezepte durchsuchen">
-      <button class="clear" type="button" aria-label="Suche leeren" ${home.query ? '' : 'hidden'}>✕</button>
+      <button class="clear" type="button" aria-label="Suche leeren" ${home.query ? '' : 'hidden'}>${icon('x')}</button>
     </div>
     <div class="chips" role="group" aria-label="Filter">
-      ${available.map((f) => `<button class="chip" type="button" data-f="${esc(f.id)}" aria-pressed="${home.filters.has(f.id)}">${esc(f.label)}</button>`).join('')}
+      ${available.map((f) => `<button class="chip" type="button" data-f="${esc(f.id)}" aria-pressed="${home.filters.has(f.id)}">${f.icon ? icon(f.icon) : ''}${esc(f.label)}</button>`).join('')}
     </div>
     <div class="result-info" aria-live="polite"></div>
     <div class="grid"></div>
@@ -265,10 +302,10 @@ function renderRecipe(slug, mode) {
   let cookStep = 0;
 
   const stats = [
-    r.zeit ? `<span class="stat">⏱ <b>${fmtTime(r.zeit)}</b></span>` : '',
-    r.kcal ? `<span class="stat">🔥 <b>${r.kcal}</b> kcal</span>` : '',
-    r.protein ? `<span class="stat">💪 <b>${r.protein} g</b> Protein</span>` : '',
-    r.ballaststoffe ? `<span class="stat">🌾 <b>${r.ballaststoffe} g</b> Ballaststoffe</span>` : '',
+    r.zeit ? `<span class="stat">${icon('clock')}<b>${fmtTime(r.zeit)}</b></span>` : '',
+    r.kcal ? `<span class="stat">${icon('flame')}<b>${r.kcal}</b> kcal</span>` : '',
+    r.protein ? `<span class="stat">${icon('dumbbell')}<b>${r.protein} g</b> Protein</span>` : '',
+    r.ballaststoffe ? `<span class="stat">${icon('wheat')}<b>${r.ballaststoffe} g</b> Ballaststoffe</span>` : '',
   ].join('');
   const statNote = [
     r.einheit ? r.portionenHinweis : `Nährwerte pro Portion (geschätzt)${r.portionenHinweis ? ' · ' + r.portionenHinweis : ''}`,
@@ -276,7 +313,7 @@ function renderRecipe(slug, mode) {
   ].filter(Boolean).join(' · ');
 
   app.innerHTML = `
-    <div class="hero${r.bild ? ' has-img' : ''}">${media(r, true)}<a class="back" href="#/">← Alle Rezepte</a></div>
+    <div class="hero${r.bild ? ' has-img' : ''}">${media(r, true)}<a class="back" href="#/">${icon('arrowLeft')}Alle Rezepte</a></div>
     <div class="wrap">
       <header class="recipe-head">
         <span class="kat">${esc(r.kategorie)}</span>
@@ -295,8 +332,8 @@ function renderRecipe(slug, mode) {
           <span class="unit"></span>
         </div>
         <div class="toggle" role="group" aria-label="Ansicht">
-          <button type="button" data-mode="normal" aria-pressed="${mode === 'normal'}">📖 Normal</button>
-          <button type="button" data-mode="kochen" aria-pressed="${mode === 'kochen'}">👩‍🍳 Kochmodus</button>
+          <button type="button" data-mode="normal" aria-pressed="${mode === 'normal'}">${icon('book')}Normal</button>
+          <button type="button" data-mode="kochen" aria-pressed="${mode === 'kochen'}">${icon('chefHat')}Kochmodus</button>
         </div>
       </div>
       <div id="content"></div>
@@ -344,7 +381,7 @@ function renderRecipe(slug, mode) {
     const pct = Math.round((Math.min(cookStep + (done ? 0 : 1), total) / total) * 100);
     let card;
     if (done) {
-      card = `<div class="cook-card cook-done"><div class="big">🎉</div><div class="text">Fertig! En Guete.</div></div>`;
+      card = `<div class="cook-card cook-done"><div class="big">${icon('check')}</div><div class="text">Fertig! En Guete.</div></div>`;
     } else {
       const step = r.schritte[cookStep];
       const ings = [...new Set(ingredientsForStep(r, step).map((it) => {
@@ -360,15 +397,15 @@ function renderRecipe(slug, mode) {
     content.innerHTML = `<div class="cook">
       <div class="cook-progress" aria-hidden="true"><div style="width:${done ? 100 : pct}%"></div></div>
       <div class="cook-meta">
-        <span class="wakelock">${wakeLock ? '🔆 Bildschirm bleibt an' : ''}</span>
+        <span class="wakelock">${wakeLock ? icon('sun') + 'Bildschirm bleibt an' : ''}</span>
         <button type="button" class="show-ings">Alle Zutaten</button>
       </div>
       ${card}
       <div class="cook-nav">
-        <button type="button" class="prev" ${cookStep === 0 ? 'disabled' : ''}>← Zurück</button>
+        <button type="button" class="prev" ${cookStep === 0 ? 'disabled' : ''}>${icon('arrowLeft')}Zurück</button>
         ${done
           ? '<button type="button" class="primary restart">Von vorne</button>'
-          : `<button type="button" class="primary next">${cookStep === total - 1 ? 'Fertig ✓' : 'Weiter →'}</button>`}
+          : `<button type="button" class="primary next">${cookStep === total - 1 ? 'Fertig' + icon('check') : 'Weiter' + icon('arrowRight')}</button>`}
       </div>
     </div>`;
     content.querySelector('.prev').addEventListener('click', () => go(-1));
@@ -400,7 +437,7 @@ function renderRecipe(slug, mode) {
     const bd = document.createElement('div');
     bd.className = 'sheet-backdrop';
     bd.innerHTML = `<div class="sheet ingredients" role="dialog" aria-modal="true" aria-label="Zutaten">
-      <div class="sheet-head"><h2 class="section" style="margin:0">Zutaten · ${servingsBySlug[slug]} ${esc(servingLabel(r, servingsBySlug[slug]))}</h2><button type="button" aria-label="Schliessen">✕</button></div>
+      <div class="sheet-head"><h2 class="section" style="margin:0">Zutaten · ${servingsBySlug[slug]} ${esc(servingLabel(r, servingsBySlug[slug]))}</h2><button type="button" aria-label="Schliessen">${icon('x')}</button></div>
       ${ingredientList()}
     </div>`;
     const close = () => { bd.remove(); document.removeEventListener('keydown', onEsc); };
@@ -472,7 +509,7 @@ function releaseWakeLock() {
 }
 function updateWakeLabel() {
   const el = document.querySelector('.wakelock');
-  if (el) el.textContent = wakeLock ? '🔆 Bildschirm bleibt an' : '';
+  if (el) el.innerHTML = wakeLock ? icon('sun') + 'Bildschirm bleibt an' : '';
 }
 
 /* ---------- Grundlagen ---------- */
