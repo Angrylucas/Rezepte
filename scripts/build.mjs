@@ -118,6 +118,7 @@ async function unsplashPhoto(query, key) {
   if (!res.ok) throw new Error(`Unsplash ${res.status} ${res.statusText}`);
   const photo = (await res.json()).results?.[0];
   if (!photo) return null;
+  console.log(`  ${query} → ${photo.alt_description || photo.description || '(ohne Beschreibung)'} (${photo.links?.html || photo.id})`);
   const utm = 'utm_source=rezepte&utm_medium=referral';
   return {
     bild: `${photo.urls.raw}&w=1800&q=80&fit=crop&auto=format`,
@@ -149,7 +150,12 @@ async function build() {
     let found = 0;
     await Promise.all(ohneBild.map(async (r) => {
       try {
-        const photo = await unsplashPhoto(r.bildsuche || r.titel, key);
+        // Mehrere Suchbegriffe mit | trennen: der erste mit Treffer gewinnt.
+        let photo = null;
+        for (const q of (r.bildsuche || r.titel).split('|').map((x) => x.trim()).filter(Boolean)) {
+          photo = await unsplashPhoto(q, key);
+          if (photo) break;
+        }
         if (photo) { Object.assign(r, photo); found++; }
         else console.warn(`Kein Foto gefunden für ${r.slug} ("${r.bildsuche || r.titel}")`);
       } catch (e) {

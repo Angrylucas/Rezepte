@@ -10,7 +10,7 @@ tags: Frühstück, Vegetarisch
 saison: Herbst, Winter
 emoji: 🍐
 bild:
-bildsuche: pear porridge bowl
+bildsuche: oatmeal pear | porridge | oatmeal
 ---
 
 ## Zutaten

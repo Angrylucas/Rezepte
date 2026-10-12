@@ -9,7 +9,7 @@ tags: Hauptmahlzeit, Geflügel, Scharf
 saison: ganzjährig
 emoji: 🌶️
 bild:
-bildsuche: pad krapow basil fried egg rice
+bildsuche: thai basil chicken | pad kra pao | thai stir fry
 ---
 
 ## Zutaten

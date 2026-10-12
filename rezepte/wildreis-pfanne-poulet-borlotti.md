@@ -10,7 +10,7 @@ tags: Hauptmahlzeit, Geflügel
 saison: Sommer, Herbst
 emoji: 🍅
 bild:
-bildsuche: wild rice beans tomatoes
+bildsuche: beans tomato rice | bean stew | rice bowl
 ---
 
 ## Zutaten

@@ -48,7 +48,7 @@ Bilder kommen automatisch, in dieser Reihenfolge:
 3. **Unsplash-Suche**: Beim Bauen sucht die Website mit dem Begriff aus `bildsuche:` (am besten auf Englisch, z. B. `pumpkin soup`) ein passendes Foto auf Unsplash. Dafür muss in Vercel die Umgebungsvariable `UNSPLASH_ACCESS_KEY` gesetzt sein (kostenloser Schlüssel unter https://unsplash.com/developers). Der Fotograf wird im Bild genannt.
 4. Sonst: farbiger Platzhalter mit dem `emoji`.
 
-Gefällt ein Unsplash-Foto nicht, den Begriff in `bildsuche:` ändern oder mit `bild:` ein eigenes Foto verlinken.
+Mehrere Begriffe mit `|` trennen (z. B. `thai basil chicken | thai stir fry`): der erste mit Treffer wird genommen. Gefällt ein Unsplash-Foto nicht, den Begriff ändern oder mit `bild:` ein eigenes Foto verlinken.
 
 ## Lokal ansehen
 
