@@ -488,6 +488,30 @@ function renderGrundlagen() {
   app.innerHTML = `<div class="wrap"><article class="prose">${html}</article></div>`;
 }
 
+/* ---------- Hell / Dunkel ---------- */
+
+const themeButton = document.querySelector('.theme-toggle');
+const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+function isDark() {
+  const t = document.documentElement.getAttribute('data-theme');
+  return t ? t === 'dark' : systemDark.matches;
+}
+function applyTheme() {
+  const dark = isDark();
+  document.documentElement.classList.toggle('is-dark', dark);
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#171a17' : '#f6f3ee';
+  themeButton.setAttribute('aria-label', dark ? 'Helles Design einschalten' : 'Dunkles Design einschalten');
+  themeButton.title = dark ? 'Helles Design' : 'Dunkles Design';
+}
+themeButton.addEventListener('click', () => {
+  const next = isDark() ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  storageSet('theme', next);
+  applyTheme();
+});
+systemDark.addEventListener('change', applyTheme);
+applyTheme();
+
 /* ---------- Routing ---------- */
 
 function route() {
