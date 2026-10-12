@@ -13,7 +13,8 @@ zeit_hinweis: plus 12–18 Std. Teigruhe
 tags: Backen, Brot, Vegetarisch
 saison: ganzjährig
 emoji: 🍞
-bild: 
+bild:
+bildsuche: olive bread loaf
 ---
 
 ## Zutaten

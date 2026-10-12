@@ -9,7 +9,8 @@ zeit: 25
 tags: Hauptmahlzeit, Fisch
 saison: Frühling, Sommer
 emoji: 🐟
-bild: 
+bild:
+bildsuche: salmon fillet peas
 ---
 
 ## Zutaten

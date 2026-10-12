@@ -8,7 +8,8 @@ zeit: 35
 tags: Hauptmahlzeit, Geflügel, Scharf
 saison: ganzjährig
 emoji: 🌶️
-bild: 
+bild:
+bildsuche: pad krapow basil fried egg rice
 ---
 
 ## Zutaten

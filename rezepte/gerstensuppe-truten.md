@@ -9,7 +9,8 @@ zeit: 60
 tags: Hauptmahlzeit, Suppe, Geflügel
 saison: Herbst, Winter
 emoji: 🍲
-bild: 
+bild:
+bildsuche: barley soup vegetables
 ---
 
 ## Zutaten

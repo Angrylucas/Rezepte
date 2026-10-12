@@ -99,13 +99,34 @@ export function parseRecipe(src, slug) {
     saison: list(meta.saison),
     emoji: meta.emoji || '🍽️',
     bild: meta.bild || null,
+    bildKlein: meta.bild || null,
+    bildQuelle: null,
+    bildsuche: meta.bildsuche || null,
     zutaten,
     schritte,
     notizen,
   };
 }
 
-function build() {
+// Sucht ein passendes Foto auf Unsplash. Braucht die Umgebungsvariable UNSPLASH_ACCESS_KEY
+// (kostenlos unter unsplash.com/developers). Ohne Schlüssel bleibt der Platzhalter.
+async function unsplashPhoto(query, key) {
+  const url = 'https://api.unsplash.com/search/photos?' + new URLSearchParams({
+    query, orientation: 'landscape', per_page: '1', content_filter: 'high',
+  });
+  const res = await fetch(url, { headers: { Authorization: `Client-ID ${key}`, 'Accept-Version': 'v1' } });
+  if (!res.ok) throw new Error(`Unsplash ${res.status} ${res.statusText}`);
+  const photo = (await res.json()).results?.[0];
+  if (!photo) return null;
+  const utm = 'utm_source=rezepte&utm_medium=referral';
+  return {
+    bild: `${photo.urls.raw}&w=1800&q=80&fit=crop&auto=format`,
+    bildKlein: `${photo.urls.raw}&w=800&h=500&q=75&fit=crop&auto=format`,
+    bildQuelle: { name: photo.user.name, link: `${photo.user.links.html}?${utm}`, quelle: 'Unsplash', quelleLink: `https://unsplash.com/?${utm}` },
+  };
+}
+
+async function build() {
   const dir = join(root, 'rezepte');
   const files = readdirSync(dir).filter((f) => f.endsWith('.md') && !f.startsWith('_'));
   const recipes = files.map((f) => parseRecipe(readFileSync(join(dir, f), 'utf8'), f.replace(/\.md$/, '')));
@@ -119,8 +140,27 @@ function build() {
   for (const r of recipes) {
     if (r.bild) continue;
     const f = bilder.find((b) => /\.(jpe?g|png|webp|avif)$/i.test(b) && b.replace(/\.[^.]+$/, '') === r.slug);
-    if (f) r.bild = 'bilder/' + f;
+    if (f) r.bild = r.bildKlein = 'bilder/' + f;
   }
+
+  const key = process.env.UNSPLASH_ACCESS_KEY;
+  const ohneBild = recipes.filter((r) => !r.bild);
+  if (key && ohneBild.length) {
+    let found = 0;
+    await Promise.all(ohneBild.map(async (r) => {
+      try {
+        const photo = await unsplashPhoto(r.bildsuche || r.titel, key);
+        if (photo) { Object.assign(r, photo); found++; }
+        else console.warn(`Kein Foto gefunden für ${r.slug} ("${r.bildsuche || r.titel}")`);
+      } catch (e) {
+        console.warn(`Fotosuche fehlgeschlagen für ${r.slug}: ${e.message}`);
+      }
+    }));
+    console.log(`Unsplash: ${found} von ${ohneBild.length} Fotos gefunden`);
+  } else if (ohneBild.length) {
+    console.log(`${ohneBild.length} Rezepte ohne Bild (UNSPLASH_ACCESS_KEY nicht gesetzt) → Platzhalter`);
+  }
+  for (const r of recipes) delete r.bildsuche;
 
   rmSync(dist, { recursive: true, force: true });
   mkdirSync(dist, { recursive: true });
@@ -131,4 +171,6 @@ function build() {
   console.log(`${recipes.length} Rezepte gebaut → dist/`);
 }
 
-if (process.argv[1] === fileURLToPath(import.meta.url)) build();
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  build().catch((e) => { console.error(e); process.exit(1); });
+}

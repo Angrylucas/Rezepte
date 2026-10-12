@@ -10,7 +10,8 @@ zeit: 55
 tags: Hauptmahlzeit, Geflügel
 saison: Herbst
 emoji: 🎃
-bild: 
+bild:
+bildsuche: stuffed mini pumpkins
 ---
 
 ## Zutaten

@@ -9,7 +9,8 @@ zeit: 45
 tags: Hauptmahlzeit, Fleisch
 saison: Sommer, Herbst
 emoji: 🥩
-bild: 
+bild:
+bildsuche: steak potatoes green beans
 ---
 
 ## Zutaten

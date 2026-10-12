@@ -9,7 +9,8 @@ zeit: 25
 tags: Hauptmahlzeit, Fisch
 saison: ganzjährig
 emoji: 🍝
-bild: 
+bild:
+bildsuche: salmon pasta broccoli
 ---
 
 ## Zutaten

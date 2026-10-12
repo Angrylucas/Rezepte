@@ -10,6 +10,7 @@ tags: Hauptmahlzeit, Geflügel
 saison: ganzjährig
 emoji: 🍽️
 bild:
+bildsuche: grilled chicken vegetables
 ---
 
 ## Zutaten

@@ -9,7 +9,8 @@ zeit: 25
 tags: Frühstück, Vegetarisch
 saison: Herbst, Winter
 emoji: 🍐
-bild: 
+bild:
+bildsuche: pear porridge bowl
 ---
 
 ## Zutaten

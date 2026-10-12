@@ -9,7 +9,8 @@ zeit: 55
 tags: Hauptmahlzeit, Geflügel
 saison: Frühling, Sommer
 emoji: 🫛
-bild: 
+bild:
+bildsuche: wild rice peas
 ---
 
 ## Zutaten
