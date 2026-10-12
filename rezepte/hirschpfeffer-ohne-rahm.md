@@ -10,7 +10,7 @@ tags: Hauptmahlzeit, Fleisch, Wild
 saison: Herbst
 emoji: 🦌
 bild:
-bildsuche: venison stew
+bildsuche: venison | game stew | beef stew
 ---
 
 ## Zutaten

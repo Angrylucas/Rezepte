@@ -10,7 +10,7 @@ tags: Hauptmahlzeit, Geflügel
 saison: Herbst, Winter
 emoji: 🌰
 bild:
-bildsuche: chicken brussels sprouts chestnuts
+bildsuche: brussels sprouts chicken | roasted brussels sprouts | chicken dinner
 ---
 
 ## Zutaten
