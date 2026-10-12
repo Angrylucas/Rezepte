@@ -9,7 +9,8 @@ zeit: 60
 tags: Hauptmahlzeit, Fisch
 saison: ganzjährig
 emoji: 🐟
-bild: 
+bild:
+bildsuche: baked fish fillet rice
 ---
 
 ## Zutaten

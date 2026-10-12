@@ -8,7 +8,8 @@ zeit: 15
 tags: Frühstück, Dessert, Vegetarisch
 saison: ganzjährig
 emoji: 🥣
-bild: 
+bild:
+bildsuche: semolina porridge raspberries
 ---
 
 ## Zutaten

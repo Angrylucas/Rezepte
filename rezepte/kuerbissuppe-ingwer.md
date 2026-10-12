@@ -9,7 +9,8 @@ zeit: 35
 tags: Suppe, Vegetarisch
 saison: Herbst, Winter
 emoji: 🎃
-bild: 
+bild:
+bildsuche: pumpkin soup
 ---
 
 ## Zutaten

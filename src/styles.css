@@ -127,6 +127,12 @@ main { outline: none; }
 /* Bild oder Platzhalter */
 .media { position: relative; overflow: hidden; background: var(--surface-2); }
 .media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.media .credit {
+  position: absolute; z-index: 2; right: 10px; bottom: 74px;
+  font-size: .72rem; color: rgba(255,255,255,.9); text-shadow: 0 1px 3px rgba(0,0,0,.6);
+}
+.media .credit a { color: inherit; }
+.cooking .media .credit { display: none; }
 .placeholder {
   width: 100%; height: 100%;
   display: grid; place-items: center;

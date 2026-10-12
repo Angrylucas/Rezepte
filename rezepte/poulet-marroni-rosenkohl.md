@@ -9,7 +9,8 @@ zeit: 35
 tags: Hauptmahlzeit, Geflügel
 saison: Herbst, Winter
 emoji: 🌰
-bild: 
+bild:
+bildsuche: chicken brussels sprouts chestnuts
 ---
 
 ## Zutaten

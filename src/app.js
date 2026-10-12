@@ -43,7 +43,12 @@ const PLACEHOLDER = {
 };
 function media(r, eager = false) {
   if (r.bild) {
-    return `<div class="media"><img src="${esc(r.bild)}" alt="${esc(r.titel)}" ${eager ? '' : 'loading="lazy"'} decoding="async"></div>`;
+    const src = eager ? r.bild : (r.bildKlein || r.bild);
+    const q = r.bildQuelle;
+    const credit = eager && q
+      ? `<span class="credit">Foto: <a href="${esc(q.link)}" target="_blank" rel="noopener">${esc(q.name)}</a> / <a href="${esc(q.quelleLink)}" target="_blank" rel="noopener">${esc(q.quelle)}</a></span>`
+      : '';
+    return `<div class="media"><img src="${esc(src)}" alt="${esc(r.titel)}" ${eager ? '' : 'loading="lazy"'} decoding="async">${credit}</div>`;
   }
   const [a, b] = PLACEHOLDER[r.kategorie] || ['#dfe9e1', '#b5cfbd'];
   return `<div class="media"><div class="placeholder" style="--ph: linear-gradient(135deg, ${a}, ${b})"><span aria-hidden="true">${esc(r.emoji)}</span></div></div>`;

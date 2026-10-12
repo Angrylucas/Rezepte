@@ -8,7 +8,8 @@ zeit: 45
 tags: Hauptmahlzeit, Fleisch
 saison: Herbst, Winter
 emoji: 🦆
-bild: 
+bild:
+bildsuche: duck breast sliced
 ---
 
 ## Zutaten

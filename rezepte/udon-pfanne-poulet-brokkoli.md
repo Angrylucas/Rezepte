@@ -9,7 +9,8 @@ zeit: 25
 tags: Hauptmahlzeit, Geflügel
 saison: ganzjährig
 emoji: 🍜
-bild: 
+bild:
+bildsuche: udon stir fry chicken broccoli
 ---
 
 ## Zutaten

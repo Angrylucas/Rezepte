@@ -9,7 +9,8 @@ zeit: 45
 tags: Hauptmahlzeit, Geflügel
 saison: Sommer
 emoji: 🥬
-bild: 
+bild:
+bildsuche: vietnamese summer rolls
 ---
 
 ## Zutaten

@@ -9,7 +9,8 @@ zeit_hinweis: plus mind. 4 Std. marinieren
 tags: Hauptmahlzeit, Fleisch, Wild
 saison: Herbst
 emoji: 🦌
-bild: 
+bild:
+bildsuche: venison stew
 ---
 
 ## Zutaten

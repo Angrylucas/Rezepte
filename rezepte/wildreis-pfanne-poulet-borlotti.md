@@ -9,7 +9,8 @@ zeit: 55
 tags: Hauptmahlzeit, Geflügel
 saison: Sommer, Herbst
 emoji: 🍅
-bild: 
+bild:
+bildsuche: wild rice beans tomatoes
 ---
 
 ## Zutaten
