@@ -2,9 +2,9 @@
 titel: Truten-Chili mit Kidneybohnen und schwarzen Bohnen
 kategorie: Poulet & Truten
 portionen: 2
-kcal: 570
-protein: 57
-ballaststoffe: 22
+kcal: 520
+protein: 49
+ballaststoffe: 12
 zeit: 35
 tags: Hauptmahlzeit, Geflügel, Eintopf
 saison: ganzjährig
@@ -14,8 +14,8 @@ bildsuche: turkey chili beans
 
 ## Zutaten
 - 300 g Trutenhack (oder Trutenbrust, fein gehackt)
-- 1 Dose Kidneybohnen (ca. 240 g abgetropft), gut abgespült
-- 1 Dose schwarze Bohnen (ca. 240 g abgetropft), gut abgespült
+- ½ Dose Kidneybohnen (ca. 120 g abgetropft), gut abgespült
+- ½ Dose schwarze Bohnen (ca. 120 g abgetropft), gut abgespült
 - 1 Rüebli, fein gewürfelt
 - 1 rote Peperoni, gewürfelt
 - 1 Zwiebel, fein gehackt
@@ -44,5 +44,5 @@ bildsuche: turkey chili beans
 ## Notizen
 - Herzhaft statt süss: Der Geschmack kommt aus angebratenem Fleisch, geröstetem Tomatenpüree, Kreuzkümmel und Rauchpaprika. Die Limette am Schluss ersetzt einen Teil des Salzes.
 - Bohnen aus der Dose immer gut abspülen, das entfernt einen grossen Teil des Salzes.
-- Nährwerte sind grob geschätzt.
+- Die übrigen Bohnen lassen sich einfrieren oder in einem Salat verwenden.
 - Schmeckt aufgewärmt am nächsten Tag noch besser und lässt sich gut portionsweise einfrieren.
