@@ -636,8 +636,9 @@ function renderCoopPlanner() {
       const parsed = coopParseOffers(JSON.stringify(payload));
       if (!parsed.length) throw new Error('Noch keine Aktionsdaten vorhanden. Der automatische Import ist möglicherweise noch nicht erfolgreich gelaufen.');
       coopSave(COOP_OFFERS_KEY, parsed);
-      status.textContent = payload.fetchedAt ? 'Stand: ' + new Date(payload.fetchedAt).toLocaleString('de-CH') : 'Aktionen geladen.';
       renderCoopPlanner();
+      const refreshedStatus = app.querySelector('#coopStatus');
+      refreshedStatus.textContent = payload.fetchedAt ? 'Stand: ' + new Date(payload.fetchedAt).toLocaleString('de-CH') : 'Aktionen geladen.';
     } catch (error) {
       status.textContent = error.message;
       status.classList.add('error');
