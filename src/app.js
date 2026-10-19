@@ -594,10 +594,10 @@ function renderCoopPlanner() {
     <section class="home-head"><p class="kat">WOCHENPLANER</p><h1>Mit Aktionen kochen.</h1><p>Importiere Aktionsprodukte und finde passende Rezepte aus deiner Sammlung.</p></section>
     <section class="panel coop-panel">
       <h2 class="section">1. Coop-Aktionen importieren</h2>
-      <p class="muted">Die Coop-Seite wird noch nicht automatisch ausgelesen. Kopiere Produktdaten aus einer zuverlässigen Aktionsliste hier hinein. Es werden keine Preise geschätzt oder erfunden.</p>
+      <p class="muted">Die aktuellen Coop-Aktionen werden täglich automatisiert abgerufen. Du kannst sie direkt laden oder eigene CSV-/JSON-Daten importieren. Preise werden nicht geschätzt.</p>
       <label class="coop-label" for="coopOfferText">CSV oder JSON</label>
       <textarea id="coopOfferText" rows="5" placeholder="Produkt;Aktionspreis;Einheit;Normalpreis;Gültig bis&#10;Pouletbrust;9.95;/kg;14.95;2026-10-25"></textarea>
-      <div class="coop-actions"><button type="button" class="primary" id="coopImport">Aktionen importieren</button><button type="button" class="secondary" id="coopClear">Liste leeren</button><span id="coopStatus" class="coop-status" aria-live="polite"></span></div>
+      <div class="coop-actions"><button type="button" class="primary" id="coopAutoImport">Aktuelle Coop-Aktionen laden</button><button type="button" class="secondary" id="coopImport">CSV/JSON importieren</button><button type="button" class="secondary" id="coopClear">Liste leeren</button><span id="coopStatus" class="coop-status" aria-live="polite"></span></div>
       <p class="muted">${offers.length ? `Gespeichert: ${offers.length} Produkte in diesem Browser.` : 'Noch keine Produkte importiert.'}</p>
       ${offers.length ? `<div class="offer-chips">${offers.map(o => `<span class="tag">${esc(o.name)} · CHF ${Number(o.price).toFixed(2)} ${esc(o.unit)}</span>`).join('')}</div>` : ''}
     </section>
@@ -625,6 +625,25 @@ function renderCoopPlanner() {
       <div class="week-grid">${suggestions.filter(x => x.score > 0).slice(0,5).map(({recipe, matched}, i) => `<div class="week-item"><span class="week-day">${['MO','DI','MI','DO','FR'][i]}</span><div><b>${esc(recipe.titel)}</b><p class="muted">${matched.map(o => esc(o.name)).join(', ')}</p></div><a href="#/rezept/${encodeURIComponent(recipe.slug)}">Kochen ↗</a></div>`).join('') || '<p class="muted">Sobald Aktionsprodukte zu Rezeptzutaten passen, erscheinen hier Vorschläge.</p>'}</div>
     </section>
   </div>`;
+  app.querySelector('#coopAutoImport').addEventListener('click', async () => {
+    const status = app.querySelector('#coopStatus');
+    status.textContent = 'Lade aktuelle Aktionen …';
+    status.classList.remove('error');
+    try {
+      const response = await fetch('coop-promotions.json?ts=' + Date.now(), { cache: 'no-store' });
+      if (!response.ok) throw new Error('Die Aktionsdaten konnten nicht geladen werden.');
+      const payload = await response.json();
+      const parsed = coopParseOffers(JSON.stringify(payload));
+      if (!parsed.length) throw new Error('Noch keine Aktionsdaten vorhanden. Der automatische Import ist möglicherweise noch nicht erfolgreich gelaufen.');
+      coopSave(COOP_OFFERS_KEY, parsed);
+      renderCoopPlanner();
+      const refreshedStatus = app.querySelector('#coopStatus');
+      refreshedStatus.textContent = payload.fetchedAt ? 'Stand: ' + new Date(payload.fetchedAt).toLocaleString('de-CH') : 'Aktionen geladen.';
+    } catch (error) {
+      status.textContent = error.message;
+      status.classList.add('error');
+    }
+  });
   app.querySelector('#coopImport').addEventListener('click', () => {
     const status = app.querySelector('#coopStatus');
     try {

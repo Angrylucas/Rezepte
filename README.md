@@ -57,18 +57,10 @@ npx serve dist  # oder ein anderer statischer Server
 ```
 
 
-## Coop-Aktionsplaner (MVP)
+## Coop-Aktionsplaner
 
-Über den Footer-Link **Coop-Aktionsplaner** lassen sich Aktionsprodukte als CSV oder JSON importieren. Die Seite ordnet vorhandene Rezepte nach erkannten Aktionszutaten und erlaubt persönliche Filter für ausgeschlossene Zutaten, Ernährungsstil und Kochzeit. Die Einstellungen werden lokal im Browser gespeichert.
+Über den Footer-Link **Coop-Aktionsplaner** lassen sich die täglich synchronisierten Coop-Aktionen mit **Aktuelle Coop-Aktionen laden** in den Wochenplaner übernehmen. Das Projekt [swissgroceries-mcp](https://github.com/nicktcode/swissgroceries-mcp) ruft die Angebote ab; ein GitHub-Actions-Workflow aktualisiert `src/coop-promotions.json` täglich um 04:17 UTC und kann manuell gestartet werden. Bei Fehlern bleiben die zuletzt gespeicherten Daten erhalten.
 
-Beispiel-CSV:
+Die Seite ordnet vorhandene Rezepte nach erkannten Aktionszutaten und erlaubt persönliche Filter für ausgeschlossene Zutaten, Ernährungsstil und Kochzeit. Einstellungen und importierte Angebote werden lokal im Browser gespeichert. Ein manueller CSV-/JSON-Import bleibt als Fallback verfügbar.
 
-```csv
-Produkt;Aktionspreis;Einheit;Normalpreis;Gültig bis
-Pouletbrust;9.95;/kg;14.95;2026-10-25
-Broccoli;1.80;/Stück;2.40;2026-10-25
-```
-
-JSON wird ebenfalls unterstützt, z. B. `[{"name":"Pouletbrust","price":9.95,"unit":"/kg","normalPrice":14.95}]`.
-
-**Noch nicht enthalten:** automatischer Import von Coop-Angeboten, KI-generierte neue Rezepte und eine verlässliche Gesamtkosten-/Ersparnisberechnung. Coop stellt keine in diesem MVP verifizierte, stabile Datenquelle bereit; deshalb werden keine Aktionspreise erfunden.
+**Wichtige Einschränkungen:** Die Coop-Datenquelle basiert auf inoffiziellen Endpunkten und kann sich ändern oder zeitweise blockiert sein. Prüfe Preis und Verfügbarkeit vor dem Einkauf direkt bei Coop. Die Vorschläge sind Zutaten-Matches, keine garantierte Ersparnis oder automatisch generierten Rezepte. Der Sync verwendet `@nicktcode/swissgroceries-mcp` als externes CLI, ohne dessen Quellcode in diese Website zu kopieren; das Paket ist AGPL-3.0-only lizenziert.
