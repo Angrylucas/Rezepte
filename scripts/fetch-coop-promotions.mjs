@@ -53,7 +53,7 @@ try {
     offers,
   };
   mkdirSync(dirname(outputPath), { recursive: true });
-  writeFileSync(outputPath, JSON.stringify(output, null, 2) + '\\n');
+  writeFileSync(outputPath, JSON.stringify(output, null, 2) + '\n');
   console.log(`Gespeichert: ${offers.length} Coop-Aktionen → ${outputPath}`);
 } finally {
   await client.close().catch(() => {});
