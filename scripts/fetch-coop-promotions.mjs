@@ -1,4 +1,3 @@
-import { spawn } from 'node:child_process';
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
