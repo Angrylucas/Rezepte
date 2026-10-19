@@ -526,7 +526,7 @@ function coopSave(key, value) {
 }
 function coopNumber(value) {
   if (value == null || value === '') return null;
-  const n = Number(String(value).replace(/CHF|Fr\\.?/gi, '').replace(/\\s/g, '').replace(/'/g, '').replace(',', '.'));
+  const n = Number(String(value).replace(/CHF|Fr\\.?/gi, '').replace(/\s/g, '').replace(/'/g, '').replace(',', '.'));
   return Number.isFinite(n) ? n : null;
 }
 function coopParseOffers(raw) {
@@ -541,9 +541,9 @@ function coopParseOffers(raw) {
       validUntil: String(x.validUntil || x.valid_until || x.gueltigBis || '')
     })).filter(x => x.name && x.price != null && x.price >= 0);
   } catch {}
-  const lines = raw.trim().split(/\\r?\\n/).filter(Boolean);
+  const lines = raw.trim().split(/\r?\n/).filter(Boolean);
   if (lines.length < 2) throw new Error('Bitte mindestens eine Produktzeile einfügen.');
-  const sep = lines[0].includes('\\t') ? '\\t' : (lines[0].includes(';') ? ';' : ',');
+  const sep = lines[0].includes('\t') ? '\t' : (lines[0].includes(';') ? ';' : ',');
   const rows = lines.map(line => line.split(sep).map(v => v.trim().replace(/^["']|["']$/g, '')));
   const normHead = s => norm(s).replace(/[^a-z0-9]/g, '');
   const headers = rows.shift().map(normHead);
@@ -571,14 +571,14 @@ function coopEvaluateRecipe(recipe, offers, prefs) {
   if (disliked.some(term => allText.includes(term))) return null;
   if (recipe.zeit && recipe.zeit > Number(prefs.maxTime)) return null;
   if (prefs.diet === 'vegetarisch' && !recipe.tags.some(t => norm(t) === 'vegetarisch' || norm(t) === 'vegan')) return null;
-  if (prefs.diet === 'fleischarm' && /\\b(rind|schwein|speck|wurst)\\b/.test(allText)) return null;
+  if (prefs.diet === 'fleischarm' && /\b(rind|schwein|speck|wurst)\b/.test(allText)) return null;
   const matched = offers.filter(offer => {
     const product = norm(offer.name).trim();
     if (!product) return false;
     return ingredients.some(ingredient => {
       const ing = norm(ingredient);
       return ing.includes(product) || product.includes(ing) ||
-        product.split(/\\s+/).filter(w => w.length >= 5).some(w => ing.includes(w));
+        product.split(/\s+/).filter(w => w.length >= 5).some(w => ing.includes(w));
     });
   });
   return { recipe, matched, score: matched.length };
