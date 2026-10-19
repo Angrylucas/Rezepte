@@ -512,6 +512,135 @@ function updateWakeLabel() {
   if (el) el.innerHTML = wakeLock ? icon('sun') + 'Bildschirm bleibt an' : '';
 }
 
+
+/* ---------- Coop-Aktionsplaner ---------- */
+const COOP_OFFERS_KEY = 'coop-aktionsplaner-offers-v1';
+const COOP_PREFS_KEY = 'coop-aktionsplaner-prefs-v1';
+const COOP_DEFAULT_PREFS = { disliked: ['Linsen', 'Quinoa'], diet: 'alle', maxTime: 45, servings: 2 };
+
+function coopGet(key, fallback) {
+  try { const raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : fallback; } catch { return fallback; }
+}
+function coopSave(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); } catch {}
+}
+function coopNumber(value) {
+  if (value == null || value === '') return null;
+  const n = Number(String(value).replace(/CHF|Fr\.?/gi, '').replace(/\s/g, '').replace(/'/g, '').replace(',', '.'));
+  return Number.isFinite(n) ? n : null;
+}
+function coopParseOffers(raw) {
+  try {
+    const parsed = JSON.parse(raw);
+    const rows = Array.isArray(parsed) ? parsed : parsed.offers;
+    if (Array.isArray(rows)) return rows.map((x, i) => ({
+      id: String(x.id || i), name: String(x.name || x.product || x.produkt || '').trim(),
+      price: coopNumber(x.price ?? x.salePrice ?? x.aktionspreis),
+      unit: String(x.unit || x.einheit || ''),
+      normalPrice: coopNumber(x.normalPrice ?? x.normal_price ?? x.normalpreis),
+      validUntil: String(x.validUntil || x.valid_until || x.gueltigBis || '')
+    })).filter(x => x.name && x.price != null && x.price >= 0);
+  } catch {}
+  const lines = raw.trim().split(/\r?\n/).filter(Boolean);
+  if (lines.length < 2) throw new Error('Bitte mindestens eine Produktzeile einfügen.');
+  const sep = lines[0].includes('\t') ? '\t' : (lines[0].includes(';') ? ';' : ',');
+  const rows = lines.map(line => line.split(sep).map(v => v.trim().replace(/^["']|["']$/g, '')));
+  const normHead = s => norm(s).replace(/[^a-z0-9]/g, '');
+  const headers = rows.shift().map(normHead);
+  const find = (...keys) => headers.findIndex(h => keys.some(k => h.includes(k)));
+  const nameI = find('produkt', 'name', 'artikel');
+  const priceI = find('aktionspreis', 'preis', 'price');
+  const unitI = find('einheit', 'unit');
+  const normalI = find('normalpreis', 'statt', 'original');
+  const dateI = find('gueltigbis', 'validuntil', 'ende');
+  if (nameI < 0 || priceI < 0) throw new Error('CSV-Kopfzeile braucht mindestens «Produkt» und «Aktionspreis».');
+  return rows.map((row, i) => ({
+    id: String(i), name: row[nameI] || '', price: coopNumber(row[priceI]),
+    unit: unitI >= 0 ? row[unitI] || '' : '',
+    normalPrice: normalI >= 0 ? coopNumber(row[normalI]) : null,
+    validUntil: dateI >= 0 ? row[dateI] || '' : ''
+  })).filter(x => x.name && x.price != null && x.price >= 0);
+}
+function coopRecipeIngredients(recipe) {
+  return recipe.zutaten.flatMap(group => group.items.map(item => item.name));
+}
+function coopEvaluateRecipe(recipe, offers, prefs) {
+  const ingredients = coopRecipeIngredients(recipe);
+  const allText = norm([recipe.titel, recipe.kategorie, recipe.tags.join(' '), ...ingredients].join(' '));
+  const disliked = prefs.disliked.map(norm).filter(Boolean);
+  if (disliked.some(term => allText.includes(term))) return null;
+  if (recipe.zeit && recipe.zeit > Number(prefs.maxTime)) return null;
+  if (prefs.diet === 'vegetarisch' && !recipe.tags.some(t => norm(t) === 'vegetarisch' || norm(t) === 'vegan')) return null;
+  if (prefs.diet === 'fleischarm' && /\b(rind|schwein|speck|wurst)\b/.test(allText)) return null;
+  const matched = offers.filter(offer => {
+    const product = norm(offer.name).trim();
+    if (!product) return false;
+    return ingredients.some(ingredient => {
+      const ing = norm(ingredient);
+      return ing.includes(product) || product.includes(ing) ||
+        product.split(/\s+/).filter(w => w.length >= 5).some(w => ing.includes(w));
+    });
+  });
+  return { recipe, matched, score: matched.length };
+}
+function renderCoopPlanner() {
+  document.title = 'Coop-Aktionsplaner · Rezepte';
+  const offers = coopGet(COOP_OFFERS_KEY, []);
+  const prefs = { ...COOP_DEFAULT_PREFS, ...coopGet(COOP_PREFS_KEY, {}) };
+  const suggestions = DATA.recipes.map(r => coopEvaluateRecipe(r, offers, prefs)).filter(Boolean)
+    .sort((a, b) => b.score - a.score || (a.recipe.zeit || 999) - (b.recipe.zeit || 999));
+  app.innerHTML = `<div class="wrap coop-page">
+    <div class="coop-topline"><a class="coop-back" href="#/">${icon('arrowLeft')} Alle Rezepte</a><a class="coop-source" href="https://www.coop.ch/de/aktionen.html" target="_blank" rel="noopener">Coop-Aktionen öffnen ↗</a></div>
+    <section class="home-head"><p class="kat">WOCHENPLANER</p><h1>Mit Aktionen kochen.</h1><p>Importiere Aktionsprodukte und finde passende Rezepte aus deiner Sammlung.</p></section>
+    <section class="panel coop-panel">
+      <h2 class="section">1. Coop-Aktionen importieren</h2>
+      <p class="muted">Die Coop-Seite wird noch nicht automatisch ausgelesen. Kopiere Produktdaten aus einer zuverlässigen Aktionsliste hier hinein. Es werden keine Preise geschätzt oder erfunden.</p>
+      <label class="coop-label" for="coopOfferText">CSV oder JSON</label>
+      <textarea id="coopOfferText" rows="5" placeholder="Produkt;Aktionspreis;Einheit;Normalpreis;Gültig bis&#10;Pouletbrust;9.95;/kg;14.95;2026-10-25"></textarea>
+      <div class="coop-actions"><button type="button" class="primary" id="coopImport">Aktionen importieren</button><button type="button" class="secondary" id="coopClear">Liste leeren</button><span id="coopStatus" class="coop-status" aria-live="polite"></span></div>
+      <p class="muted">${offers.length ? `Gespeichert: ${offers.length} Produkte in diesem Browser.` : 'Noch keine Produkte importiert.'}</p>
+      ${offers.length ? `<div class="offer-chips">${offers.map(o => `<span class="tag">${esc(o.name)} · CHF ${Number(o.price).toFixed(2)} ${esc(o.unit)}</span>`).join('')}</div>` : ''}
+    </section>
+    <section class="panel coop-panel">
+      <h2 class="section">2. Deine Vorlieben</h2>
+      <label class="coop-label" for="coopDisliked">Zutaten, die du nicht magst (Komma-getrennt)</label>
+      <input id="coopDisliked" class="coop-input" value="${esc(prefs.disliked.join(', '))}" placeholder="z. B. Oliven, Pilze">
+      <div class="coop-controls">
+        <label class="coop-field"><span>Ernährungsstil</span><select id="coopDiet" class="coop-input">
+          <option value="alle" ${prefs.diet === 'alle' ? 'selected' : ''}>Alles</option><option value="vegetarisch" ${prefs.diet === 'vegetarisch' ? 'selected' : ''}>Vegetarisch</option><option value="fleischarm" ${prefs.diet === 'fleischarm' ? 'selected' : ''}>Fleischarm</option>
+        </select></label>
+        <label class="coop-field"><span>Maximale Kochzeit</span><select id="coopTime" class="coop-input">${[15,30,45,60,90].map(n => `<option value="${n}" ${Number(prefs.maxTime) === n ? 'selected' : ''}>${n} Minuten</option>`).join('')}</select></label>
+        
+      </div>
+      <button type="button" class="primary" id="coopSavePrefs">Filter speichern</button>
+      <p class="muted">Ausgeschlossene Zutaten werden gegen Rezeptname, Zutaten und Tags geprüft. Die Einstellungen bleiben in diesem Browser gespeichert.</p>
+    </section>
+    <section class="coop-results">
+      <div class="coop-section-head"><div><p class="kat">DEINE VORSCHLÄGE</p><h2 class="section">Passende Rezepte</h2></div><span class="muted">${suggestions.length} Treffer</span></div>
+      ${!offers.length ? '<div class="panel"><p>Importiere zuerst die aktuellen Aktionsprodukte. Danach werden passende Rezepte nach Anzahl erkannter Aktionszutaten sortiert.</p></div>' :
+      suggestions.length ? `<div class="grid">${suggestions.slice(0, 18).map(({recipe, matched, score}) => `<a class="card" href="#/rezept/${encodeURIComponent(recipe.slug)}">${media(recipe)}<div class="body"><span class="kat">${esc(recipe.kategorie)}</span><h2>${esc(recipe.titel)}</h2><div class="facts"><span>${icon('clock')}${recipe.zeit ? fmtTime(recipe.zeit) : 'Zeit offen'}</span><span>${recipe.protein ? recipe.protein + ' g Protein' : ''}</span></div><p class="muted">${score ? `${score} passende Aktionszutat${score === 1 ? '' : 'en'}: ${matched.map(o => esc(o.name)).join(', ')}` : 'Kein direkter Aktionszutaten-Treffer'}</p></div></a>`).join('')}</div>` :
+      '<div class="panel"><p>Keine Rezepte passen zu den aktuellen Filtern. Entferne einzelne Ausschlüsse oder erhöhe die Kochzeit.</p></div>'}
+    </section>
+    <section class="panel coop-panel"><h2 class="section">Wochenplan-Idee</h2><p>Die fünf Rezepte mit den meisten Aktionszutaten sind ein Startpunkt für deine Woche. Das ist noch keine automatische KI-Rezeptgenerierung und keine verlässliche Kostenberechnung.</p>
+      <div class="week-grid">${suggestions.filter(x => x.score > 0).slice(0,5).map(({recipe, matched}, i) => `<div class="week-item"><span class="week-day">${['MO','DI','MI','DO','FR'][i]}</span><div><b>${esc(recipe.titel)}</b><p class="muted">${matched.map(o => esc(o.name)).join(', ')}</p></div><a href="#/rezept/${encodeURIComponent(recipe.slug)}">Kochen ↗</a></div>`).join('') || '<p class="muted">Sobald Aktionsprodukte zu Rezeptzutaten passen, erscheinen hier Vorschläge.</p>'}</div>
+    </section>
+  </div>`;
+  app.querySelector('#coopImport').addEventListener('click', () => {
+    const status = app.querySelector('#coopStatus');
+    try {
+      const parsed = coopParseOffers(app.querySelector('#coopOfferText').value);
+      if (!parsed.length) throw new Error('Keine gültigen Produkte erkannt. Prüfe Produktnamen und Preise.');
+      coopSave(COOP_OFFERS_KEY, parsed); renderCoopPlanner();
+    } catch (error) { status.textContent = error.message; status.classList.add('error'); }
+  });
+  app.querySelector('#coopClear').addEventListener('click', () => { coopSave(COOP_OFFERS_KEY, []); renderCoopPlanner(); });
+  app.querySelector('#coopSavePrefs').addEventListener('click', () => {
+    const disliked = app.querySelector('#coopDisliked').value.split(',').map(x => x.trim()).filter(Boolean);
+    coopSave(COOP_PREFS_KEY, { disliked, diet: app.querySelector('#coopDiet').value, maxTime: Number(app.querySelector('#coopTime').value), servings: Number(prefs.servings || 2) });
+    renderCoopPlanner();
+  });
+}
+
 /* ---------- Grundlagen ---------- */
 
 function renderGrundlagen() {
@@ -559,6 +688,7 @@ function route() {
   const m = hash.match(/^\/rezept\/([^/]+)(?:\/(kochen))?$/);
   if (m) renderRecipe(m[1], m[2]);
   else if (hash === '/grundlagen') renderGrundlagen();
+  else if (hash === '/aktionen') renderCoopPlanner();
   else renderHome();
   window.scrollTo(0, 0);
   if (m) app.focus({ preventScroll: true });

@@ -334,3 +334,44 @@ h2.section { font-size: 1.25rem; margin: 0 0 12px; letter-spacing: -.01em; }
 .cook-done .big { color: var(--accent); }
 .cook-done .big .ic { width: 64px; height: 64px; }
 .search .clear[hidden] { display: none; }
+
+
+/* ---------- Coop-Aktionsplaner ---------- */
+.coop-page { padding-bottom: 42px; }
+.coop-topline { display:flex; align-items:center; justify-content:space-between; gap:12px; padding-top:18px; }
+.coop-back,.coop-source { display:inline-flex; align-items:center; gap:6px; color:var(--accent); font-size:.92rem; text-decoration:none; }
+.coop-back:hover,.coop-source:hover { text-decoration:underline; }
+.coop-page .home-head { padding-top:24px; padding-bottom:22px; }
+.coop-page .home-head .kat,.coop-section-head .kat { color:var(--accent); font-size:.78rem; font-weight:700; letter-spacing:.08em; margin:0 0 4px; }
+.coop-panel { margin-bottom:18px; }
+.coop-panel .muted,.coop-results .muted { color:var(--muted); font-size:.91rem; }
+.coop-label { display:block; font-weight:650; font-size:.92rem; margin:12px 0 6px; }
+.coop-page textarea,.coop-input { display:block; width:100%; border:1px solid var(--line); background:var(--bg); color:var(--text); border-radius:10px; padding:11px 12px; font:inherit; }
+.coop-page textarea { resize:vertical; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.88rem; }
+.coop-actions { display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin-top:12px; }
+.coop-page .primary,.coop-page .secondary { border-radius:999px; padding:9px 16px; font:inherit; font-size:.92rem; font-weight:600; }
+.coop-page .primary { border:1px solid var(--accent); background:var(--accent); color:var(--accent-text); }
+.coop-page .secondary { border:1px solid var(--line); background:var(--surface); color:var(--text); }
+.coop-status { color:#a33; font-size:.9rem; }
+.coop-status.error { color:#b42318; }
+.offer-chips { display:flex; flex-wrap:wrap; gap:7px; margin-top:10px; }
+.coop-controls { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:12px 0 16px; }
+.coop-field { display:flex; flex-direction:column; gap:6px; font-size:.9rem; font-weight:600; }
+.coop-section-head { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin:28px 0 14px; }
+.coop-section-head .section { margin:0; }
+.coop-section-head > .muted { font-size:.88rem; white-space:nowrap; }
+.coop-grid .card .body p { margin:8px 0 0; font-size:.88rem; }
+.week-grid { display:grid; gap:0; }
+.week-item { display:grid; grid-template-columns:42px minmax(0,1fr) auto; align-items:center; gap:12px; padding:12px 0; border-bottom:1px solid var(--line); }
+.week-item:last-child { border-bottom:0; }
+.week-day { font-size:.75rem; font-weight:750; letter-spacing:.04em; color:var(--accent); background:var(--accent-soft); border-radius:9px; padding:6px 5px; text-align:center; }
+.week-item b { font-size:.96rem; }
+.week-item p { margin:2px 0 0; font-size:.84rem; }
+.week-item a { color:var(--accent); font-size:.88rem; white-space:nowrap; }
+@media (max-width:600px) {
+  .coop-controls { grid-template-columns:1fr; gap:10px; }
+  .coop-section-head { align-items:flex-start; }
+  .coop-topline { align-items:flex-start; }
+  .week-item { grid-template-columns:38px minmax(0,1fr); }
+  .week-item a { grid-column:2; }
+}

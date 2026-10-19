@@ -55,3 +55,20 @@ Mehrere Begriffe mit `|` trennen (z. B. `thai basil chicken | thai stir fry`): d
 npm run build   # erzeugt dist/
 npx serve dist  # oder ein anderer statischer Server
 ```
+
+
+## Coop-Aktionsplaner (MVP)
+
+Über den Footer-Link **Coop-Aktionsplaner** lassen sich Aktionsprodukte als CSV oder JSON importieren. Die Seite ordnet vorhandene Rezepte nach erkannten Aktionszutaten und erlaubt persönliche Filter für ausgeschlossene Zutaten, Ernährungsstil und Kochzeit. Die Einstellungen werden lokal im Browser gespeichert.
+
+Beispiel-CSV:
+
+```csv
+Produkt;Aktionspreis;Einheit;Normalpreis;Gültig bis
+Pouletbrust;9.95;/kg;14.95;2026-10-25
+Broccoli;1.80;/Stück;2.40;2026-10-25
+```
+
+JSON wird ebenfalls unterstützt, z. B. `[{"name":"Pouletbrust","price":9.95,"unit":"/kg","normalPrice":14.95}]`.
+
+**Noch nicht enthalten:** automatischer Import von Coop-Angeboten, KI-generierte neue Rezepte und eine verlässliche Gesamtkosten-/Ersparnisberechnung. Coop stellt keine in diesem MVP verifizierte, stabile Datenquelle bereit; deshalb werden keine Aktionspreise erfunden.
