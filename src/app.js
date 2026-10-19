@@ -526,7 +526,7 @@ function coopSave(key, value) {
 }
 function coopNumber(value) {
   if (value == null || value === '') return null;
-  const n = Number(String(value).replace(/CHF|Fr\\.?/gi, '').replace(/\s/g, '').replace(/'/g, '').replace(',', '.'));
+  const n = Number(String(value).replace(/CHF|Fr\.?/gi, '').replace(/\s/g, '').replace(/'/g, '').replace(',', '.'));
   return Number.isFinite(n) ? n : null;
 }
 function coopParseOffers(raw) {
@@ -610,7 +610,7 @@ function renderCoopPlanner() {
           <option value="alle" ${prefs.diet === 'alle' ? 'selected' : ''}>Alles</option><option value="vegetarisch" ${prefs.diet === 'vegetarisch' ? 'selected' : ''}>Vegetarisch</option><option value="fleischarm" ${prefs.diet === 'fleischarm' ? 'selected' : ''}>Fleischarm</option>
         </select></label>
         <label class="coop-field"><span>Maximale Kochzeit</span><select id="coopTime" class="coop-input">${[15,30,45,60,90].map(n => `<option value="${n}" ${Number(prefs.maxTime) === n ? 'selected' : ''}>${n} Minuten</option>`).join('')}</select></label>
-        <label class="coop-field"><span>Portionen</span><select id="coopServings" class="coop-input">${[1,2,3,4,5,6].map(n => `<option value="${n}" ${Number(prefs.servings) === n ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
+        
       </div>
       <button type="button" class="primary" id="coopSavePrefs">Filter speichern</button>
       <p class="muted">Ausgeschlossene Zutaten werden gegen Rezeptname, Zutaten und Tags geprüft. Die Einstellungen bleiben in diesem Browser gespeichert.</p>
@@ -636,7 +636,7 @@ function renderCoopPlanner() {
   app.querySelector('#coopClear').addEventListener('click', () => { coopSave(COOP_OFFERS_KEY, []); renderCoopPlanner(); });
   app.querySelector('#coopSavePrefs').addEventListener('click', () => {
     const disliked = app.querySelector('#coopDisliked').value.split(',').map(x => x.trim()).filter(Boolean);
-    coopSave(COOP_PREFS_KEY, { disliked, diet: app.querySelector('#coopDiet').value, maxTime: Number(app.querySelector('#coopTime').value), servings: Number(app.querySelector('#coopServings').value) });
+    coopSave(COOP_PREFS_KEY, { disliked, diet: app.querySelector('#coopDiet').value, maxTime: Number(app.querySelector('#coopTime').value), servings: Number(prefs.servings || 2) });
     renderCoopPlanner();
   });
 }
