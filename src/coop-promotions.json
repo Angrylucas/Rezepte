@@ -1,7 +1,7 @@
 {
   "source": "swissgroceries-mcp",
   "chain": "coop",
-  "fetchedAt": "2026-10-20T05:35:11.889Z",
+  "fetchedAt": "2026-10-20T09:27:47.393Z",
   "count": 94,
   "offers": [
     {
@@ -71,6 +71,17 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3560346_001.jpg?_=1787203412863"
     },
     {
+      "id": "7565175",
+      "name": "Primagusto Heidelbeeren",
+      "price": 3.9,
+      "unit": "200 g",
+      "normalPrice": 4.95,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-21%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/beeren/p/7565175",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7565175_001.jpg?_=1778159148176"
+    },
+    {
       "id": "7609684",
       "name": "Primagusto Trauben weiss kernarm",
       "price": 2.8,
@@ -115,17 +126,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7399748_001.jpg?_=1747608201036"
     },
     {
-      "id": "6817198",
-      "name": "Zewa Wisch & Weg Haushaltspapier weiss 16 Rollen",
-      "price": 13.9,
-      "unit": "",
-      "normalPrice": 27.8,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/6817198",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6817198_001.jpg?_=1737160647042"
-    },
-    {
       "id": "3877762",
       "name": "Plenty Original Haushaltstücher 16x45 Blatt",
       "price": 16.5,
@@ -135,6 +135,17 @@
       "discount": "-40%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/3877762",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3877762_001.jpg?_=1782794672938"
+    },
+    {
+      "id": "6817198",
+      "name": "Zewa Wisch & Weg Haushaltspapier weiss 16 Rollen",
+      "price": 13.9,
+      "unit": "",
+      "normalPrice": 27.8,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/6817198",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6817198_001.jpg?_=1737160647042"
     },
     {
       "id": "4789857",
@@ -446,14 +457,14 @@
     },
     {
       "id": "4310929",
-      "name": "Emmi Tête de Moine Rosetten 3x  120g",
-      "price": 13.95,
-      "unit": "360 g",
-      "normalPrice": 17.85,
+      "name": "Emmi Tête de Moine Rosetten",
+      "price": 4.65,
+      "unit": "120 g",
+      "normalPrice": 5.95,
       "validUntil": "2026-10-25T22:00:00.000Z",
       "discount": "-21%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/kaesesnack-apero/p/4310929",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4310929_900.jpg?_=1789036532441"
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4310929_001.jpg?_=1749620598657"
     },
     {
       "id": "4390087",
@@ -1026,17 +1037,6 @@
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/essig-oel/oel/olivenoel/p/7423032",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7423032_001.jpg?_=1761134036095"
-    },
-    {
-      "id": "7520595",
-      "name": "Persil Disc Universal 60 Waschgänge",
-      "price": 29.95,
-      "unit": "60 piece",
-      "normalPrice": 44.8,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-33%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7520595",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7520595_001.jpg?_=1785444754833"
     }
   ]
 }
