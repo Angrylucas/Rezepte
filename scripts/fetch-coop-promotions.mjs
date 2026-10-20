@@ -31,12 +31,15 @@ try {
     throw new Error('Keine Coop-Aktionen zurückgegeben. Vorhandene Daten bleiben unverändert.');
   }
 
+  // swissgroceries-mcp liefert price als { current, regular } und size als { value, unit }.
+  const priceOf = (v) => Number(typeof v === 'object' && v ? v.current : v);
+  const sizeOf = (v) => (typeof v === 'object' && v ? [v.value, v.unit].filter((x) => x != null).join(' ') : String(v || ''));
   const offers = promotions.map((p, i) => ({
     id: String(p.productId || p.id || i),
     name: String(p.productName || p.name || '').trim(),
-    price: Number(p.price),
-    unit: String(p.size || p.unit || ''),
-    normalPrice: null,
+    price: priceOf(p.price),
+    unit: sizeOf(p.size || p.unit),
+    normalPrice: p.price?.regular != null ? Number(p.price.regular) : null,
     validUntil: String(p.validUntil || ''),
     discount: String(p.description || ''),
     productUrl: String(p.productUrl || ''),
