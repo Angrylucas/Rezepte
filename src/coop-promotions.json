@@ -1,8 +1,8 @@
 {
   "source": "swissgroceries-mcp",
   "chain": "coop",
-  "fetchedAt": "2026-10-24T08:54:11.802Z",
-  "count": 99,
+  "fetchedAt": "2026-10-25T09:11:01.454Z",
+  "count": 100,
   "offers": [
     {
       "id": "6346775",
@@ -181,17 +181,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6973612_900.jpg?_=1761298997422"
     },
     {
-      "id": "4125543",
-      "name": "Plenty Short&Smart Haushaltstücher 16x74 Blatt",
-      "price": 16.5,
-      "unit": "",
-      "normalPrice": 27.8,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-40%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/4125543",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4125543_001.jpg?_=1782794651902"
-    },
-    {
       "id": "3090325",
       "name": "Clementinen",
       "price": 3.5,
@@ -201,6 +190,17 @@
       "discount": "-29%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/zitrusfruechte/clementinen-mandarinen/p/3090325",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3090325_001.jpg?_=1792058013014"
+    },
+    {
+      "id": "4125543",
+      "name": "Plenty Short&Smart Haushaltstücher 16x74 Blatt",
+      "price": 16.5,
+      "unit": "",
+      "normalPrice": 27.8,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-40%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/4125543",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4125543_001.jpg?_=1782794651902"
     },
     {
       "id": "6747812",
@@ -258,17 +258,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4489512_001.jpg?_=1788212192889"
     },
     {
-      "id": "7444458",
-      "name": "Super Soft Sensation 3-lagig 32 Rollen",
-      "price": 18.95,
-      "unit": "",
-      "normalPrice": 26.5,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-28%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444458",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444458_001.jpg?_=1769480731655"
-    },
-    {
       "id": "6418493",
       "name": "Ananas 4 Scheiben 6x  140g",
       "price": 7.2,
@@ -278,6 +267,17 @@
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/konserven/fruechte/fruechte-kernobst/p/6418493",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6418493_900.jpg?_=1667296444745"
+    },
+    {
+      "id": "7444458",
+      "name": "Super Soft Sensation 3-lagig 32 Rollen",
+      "price": 18.95,
+      "unit": "",
+      "normalPrice": 26.5,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-28%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444458",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444458_001.jpg?_=1769480731655"
     },
     {
       "id": "7148851",
@@ -313,28 +313,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3438152_001.jpg?_=1695623587720"
     },
     {
-      "id": "3081179",
-      "name": "Emmi Gala Frischkäse Nature 3x  80g",
-      "price": 4.95,
-      "unit": "240 g",
-      "normalPrice": 6.3,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-21%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/frischkaese-mozzarella/frischkaese-aufstrich/p/3081179",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3081179_900.jpg?_=1737534805654"
-    },
-    {
-      "id": "4310929",
-      "name": "Emmi Tête de Moine Rosetten 3x  120g",
-      "price": 13.95,
-      "unit": "360 g",
-      "normalPrice": 17.85,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-21%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/kaesesnack-apero/p/4310929",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4310929_900.jpg?_=1789036532441"
-    },
-    {
       "id": "6585301",
       "name": "Naturaplan Bio Spätzli 3x  300g",
       "price": 5.85,
@@ -346,6 +324,17 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6585301_900.jpg?_=1791981324052"
     },
     {
+      "id": "3081179",
+      "name": "Emmi Gala Frischkäse Nature 3x  80g",
+      "price": 4.95,
+      "unit": "240 g",
+      "normalPrice": 6.3,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-21%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/frischkaese-mozzarella/frischkaese-aufstrich/p/3081179",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3081179_900.jpg?_=1737534805654"
+    },
+    {
       "id": "6080358",
       "name": "Naturaplan Bio Schweizer Gemüsemischung 2x  500g",
       "price": 7.95,
@@ -355,6 +344,17 @@
       "discount": "-17%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/tiefgekuehlt/fruechte-gemuese/gemuese-kartoffelprodukte/gemuese-mischungen/p/6080358",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6080358_900.jpg?_=1721225138137"
+    },
+    {
+      "id": "4310929",
+      "name": "Emmi Tête de Moine Rosetten 3x  120g",
+      "price": 13.95,
+      "unit": "360 g",
+      "normalPrice": 17.85,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-21%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/kaesesnack-apero/p/4310929",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4310929_900.jpg?_=1789036532441"
     },
     {
       "id": "3358840",
@@ -379,17 +379,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3060599_001.jpg?_=1723106137040"
     },
     {
-      "id": "7148852",
-      "name": "Persil Kraft-Gel Color 80 Waschgänge",
-      "price": 29.95,
-      "unit": "3.6 l",
-      "normalPrice": 51,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-41%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/color/p/7148852",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7148852_001.jpg?_=1772748103216"
-    },
-    {
       "id": "7444120",
       "name": "Oecoplan Goldmelisse white 3-lagig 32 Rollen",
       "price": 18.95,
@@ -399,39 +388,6 @@
       "discount": "-28%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444120",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444120_001.jpg?_=1764629675687"
-    },
-    {
-      "id": "3845491",
-      "name": "Emmi Birchermüesli Classic 3x  200g",
-      "price": 5.4,
-      "unit": "600 g",
-      "normalPrice": 6.75,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-20%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/joghurt/spezialjoghurt-mueesli/p/3845491",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3845491_900.jpg?_=1770363852339"
-    },
-    {
-      "id": "7353927",
-      "name": "Naturaplan Bio Kamillentee 20 Beutel",
-      "price": 0.85,
-      "unit": "50 g",
-      "normalPrice": 1.3,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-34%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/heisse-getraenke/tee/kraeutertee/p/7353927",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7353927_001.jpg?_=1768982874862"
-    },
-    {
-      "id": "3002344",
-      "name": "Kambly Bretzeli 5x  115g",
-      "price": 11.7,
-      "unit": "575 g",
-      "normalPrice": 17.75,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-34%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/suesses-snacks/guetzli-suessgebaeck/guetzli-mit-schokolade/weitere-guetzli/p/3002344",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3002344_900.jpg?_=1791981799724"
     },
     {
       "id": "5756801",
@@ -445,15 +401,48 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/5756801_001.jpg?_=1612253615946"
     },
     {
-      "id": "3381386",
-      "name": "Feldschlösschen Original Lager Bier 24x50cl",
-      "price": 27.6,
-      "unit": "12 l",
-      "normalPrice": 46,
+      "id": "7148852",
+      "name": "Persil Kraft-Gel Color 80 Waschgänge",
+      "price": 29.95,
+      "unit": "3.6 l",
+      "normalPrice": 51,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-40%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/bier/multipacks-ab-12x50cl/p/3381386",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3381386_001.jpg?_=1633413722913"
+      "discount": "-41%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/color/p/7148852",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7148852_001.jpg?_=1772748103216"
+    },
+    {
+      "id": "3845491",
+      "name": "Emmi Birchermüesli Classic 3x  200g",
+      "price": 5.4,
+      "unit": "600 g",
+      "normalPrice": 6.75,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-20%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/joghurt/spezialjoghurt-mueesli/p/3845491",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3845491_900.jpg?_=1770363852339"
+    },
+    {
+      "id": "3002344",
+      "name": "Kambly Bretzeli 5x  115g",
+      "price": 11.7,
+      "unit": "575 g",
+      "normalPrice": 17.75,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-34%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/suesses-snacks/guetzli-suessgebaeck/guetzli-mit-schokolade/weitere-guetzli/p/3002344",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3002344_900.jpg?_=1791981799724"
+    },
+    {
+      "id": "7353927",
+      "name": "Naturaplan Bio Kamillentee 20 Beutel",
+      "price": 0.85,
+      "unit": "50 g",
+      "normalPrice": 1.3,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-34%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/heisse-getraenke/tee/kraeutertee/p/7353927",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7353927_001.jpg?_=1768982874862"
     },
     {
       "id": "3020756",
@@ -467,6 +456,17 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3020756_001.jpg?_=1581377657548"
     },
     {
+      "id": "6740287",
+      "name": "Naturaplan Bio Lachsfilet",
+      "price": 19.95,
+      "unit": "500 g",
+      "normalPrice": 27.9,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-28%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/tiefgekuehlt/fleisch-fisch/fisch-meeresfruechte/ganze-fische-filets/p/6740287",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6740287_001.jpg?_=1752818633882"
+    },
+    {
       "id": "7427023",
       "name": "subito Haushaltspapier white long 12 Rollen",
       "price": 12.4,
@@ -478,15 +478,15 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7427023_001.jpg?_=1772055653189"
     },
     {
-      "id": "7533100",
-      "name": "Plenty Smart Haushaltstücher ohne Hülse 6 Rollen",
-      "price": 9.95,
-      "unit": "",
-      "normalPrice": 20.85,
+      "id": "3381386",
+      "name": "Feldschlösschen Original Lager Bier 24x50cl",
+      "price": 27.6,
+      "unit": "12 l",
+      "normalPrice": 46,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-52%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/7533100",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7533100_001.jpg?_=1774959336371"
+      "discount": "-40%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/bier/multipacks-ab-12x50cl/p/3381386",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3381386_001.jpg?_=1633413722913"
     },
     {
       "id": "3406440",
@@ -500,15 +500,26 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3406440_001.jpg?_=1765288712693"
     },
     {
-      "id": "6740287",
-      "name": "Naturaplan Bio Lachsfilet",
-      "price": 19.95,
-      "unit": "500 g",
-      "normalPrice": 27.9,
+      "id": "3378114",
+      "name": "Granini Orangensaft 6x1l",
+      "price": 12.95,
+      "unit": "6 l",
+      "normalPrice": 22.2,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-28%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/tiefgekuehlt/fleisch-fisch/fisch-meeresfruechte/ganze-fische-filets/p/6740287",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6740287_001.jpg?_=1752818633882"
+      "discount": "-41%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/frucht-gemuesesaefte/fruchtsaefte/orangensaft/p/3378114",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3378114_001.jpg?_=1761051226693"
+    },
+    {
+      "id": "7533100",
+      "name": "Plenty Smart Haushaltstücher ohne Hülse 6 Rollen",
+      "price": 9.95,
+      "unit": "",
+      "normalPrice": 20.85,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-52%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/7533100",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7533100_001.jpg?_=1774959336371"
     },
     {
       "id": "6386995",
@@ -522,17 +533,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6386995_001.jpg?_=1787902405888"
     },
     {
-      "id": "3378114",
-      "name": "Granini Orangensaft 6x1l",
-      "price": 12.95,
-      "unit": "6 l",
-      "normalPrice": 22.2,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-41%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/frucht-gemuesesaefte/fruchtsaefte/orangensaft/p/3378114",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3378114_001.jpg?_=1761051226693"
-    },
-    {
       "id": "3066212",
       "name": "Natura-Beef Rindsgeschnetzeltes",
       "price": 6.6,
@@ -544,15 +544,15 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3066212_001.jpg?_=1581454254967"
     },
     {
-      "id": "3598719",
-      "name": "Grischuna Mini-Pic 4x90g",
-      "price": 10.95,
-      "unit": "360 g",
-      "normalPrice": 14.8,
+      "id": "7190448",
+      "name": "Primagusto Trauben Uva Italia ca.",
+      "price": 3.35,
+      "unit": "1000 g",
+      "normalPrice": 4.95,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-26%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/charcuterie-wurstwaren/snacks-apero/p/3598719",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3598719_001.jpg?_=1758711809514"
+      "discount": "-32%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/trauben/p/7190448",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7190448_001.jpg?_=1759389199105"
     },
     {
       "id": "7444459",
@@ -577,17 +577,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3358841_001.jpg?_=1781508868145"
     },
     {
-      "id": "6708225",
-      "name": "Sun Classic Geschirrspül-Pulver Active Clean Lemon 2x  950g",
-      "price": 13.9,
-      "unit": "1900 g",
-      "normalPrice": 19.9,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-30%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/kueche/tabs-pulver-gel/p/6708225",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6708225_900.jpg?_=1724673921204"
-    },
-    {
       "id": "3525222",
       "name": "Cif Bad und Dusche Spray Reiniger 2x  750ml",
       "price": 9.9,
@@ -599,15 +588,37 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3525222_900.jpg?_=1693812135624"
     },
     {
-      "id": "6994595",
-      "name": "Sun Classic Active Clean 100 Tabs",
-      "price": 15.95,
-      "unit": "100 piece",
-      "normalPrice": 27.15,
+      "id": "6708225",
+      "name": "Sun Classic Geschirrspül-Pulver Active Clean Lemon 2x  950g",
+      "price": 13.9,
+      "unit": "1900 g",
+      "normalPrice": 19.9,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-41%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/kueche/tabs-pulver-gel/p/6994595",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6994595_001.jpg?_=1772521618280"
+      "discount": "-30%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/kueche/tabs-pulver-gel/p/6708225",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6708225_900.jpg?_=1724673921204"
+    },
+    {
+      "id": "3030287",
+      "name": "Rösti fixfertig 5x  500g",
+      "price": 8.3,
+      "unit": "2500 g",
+      "normalPrice": 12.5,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-33%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/grundnahrungsmittel/kartoffelprodukte/roesti-gratin/p/3030287",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3030287_900.jpg?_=1791982443435"
+    },
+    {
+      "id": "3946002",
+      "name": "Kastanien",
+      "price": 6.95,
+      "unit": "1 kg",
+      "normalPrice": 12,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-42%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/nuesse-datteln-marroni-und-feigen/p/3946002",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3946002_001.jpg?_=1700464325688"
     },
     {
       "id": "7148853",
@@ -632,37 +643,15 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7498244_001.jpg?_=1789763789350"
     },
     {
-      "id": "3030287",
-      "name": "Rösti fixfertig 5x  500g",
-      "price": 8.3,
-      "unit": "2500 g",
-      "normalPrice": 12.5,
+      "id": "6994595",
+      "name": "Sun Classic Active Clean 100 Tabs",
+      "price": 15.95,
+      "unit": "100 piece",
+      "normalPrice": 27.15,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-33%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/grundnahrungsmittel/kartoffelprodukte/roesti-gratin/p/3030287",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3030287_900.jpg?_=1791982443435"
-    },
-    {
-      "id": "7190448",
-      "name": "Primagusto Trauben Uva Italia ca.",
-      "price": 3.35,
-      "unit": "1000 g",
-      "normalPrice": 4.95,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-32%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/trauben/p/7190448",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7190448_001.jpg?_=1759389199105"
-    },
-    {
-      "id": "7128538",
-      "name": "Findus Schlemmerfilet Bordelaise MSC 2x  380g",
-      "price": 13.95,
-      "unit": "760 g",
-      "normalPrice": 18.6,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-25%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/tiefgekuehlt/fleisch-fisch/fisch-meeresfruechte/fischgerichte/p/7128538",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7128538_900.jpg?_=1778655312421"
+      "discount": "-41%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/kueche/tabs-pulver-gel/p/6994595",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6994595_001.jpg?_=1772521618280"
     },
     {
       "id": "6363191",
@@ -687,15 +676,15 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4967503_001.jpg?_=1580976103529"
     },
     {
-      "id": "3946002",
-      "name": "Kastanien",
-      "price": 6.95,
-      "unit": "1 kg",
-      "normalPrice": 12,
+      "id": "7128538",
+      "name": "Findus Schlemmerfilet Bordelaise MSC 2x  380g",
+      "price": 13.95,
+      "unit": "760 g",
+      "normalPrice": 18.6,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-42%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/nuesse-datteln-marroni-und-feigen/p/3946002",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3946002_001.jpg?_=1700464325688"
+      "discount": "-25%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/tiefgekuehlt/fleisch-fisch/fisch-meeresfruechte/fischgerichte/p/7128538",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7128538_900.jpg?_=1778655312421"
     },
     {
       "id": "7533670",
@@ -720,17 +709,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/5741964_001.jpg?_=1581459049901"
     },
     {
-      "id": "7160973",
-      "name": "Sun Brilliant Shine All-in-1 70 Caps",
-      "price": 19.95,
-      "unit": "70 piece",
-      "normalPrice": 40.25,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/kueche/tabs-pulver-gel/p/7160973",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7160973_001.jpg?_=1790924118392"
-    },
-    {
       "id": "3020183",
       "name": "Pfirsichhälften 3x  240g",
       "price": 4.4,
@@ -742,17 +720,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3020183_900.jpg?_=1659610315437"
     },
     {
-      "id": "7258373",
-      "name": "Omo Flüssig Universal 100 Waschgänge",
-      "price": 25.9,
-      "unit": "4.5 l",
-      "normalPrice": 51.8,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7258373",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7258373_001.jpg?_=1723450065621"
-    },
-    {
       "id": "3673391",
       "name": "Badoit Mineralwasser mit Kohlensäure 6x1l",
       "price": 3.5,
@@ -762,6 +729,28 @@
       "discount": "-38%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/mineralwasser/multipacks-ab-1-liter/p/3673391",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3673391_001.jpg?_=1789044214704"
+    },
+    {
+      "id": "7160973",
+      "name": "Sun Brilliant Shine All-in-1 70 Caps",
+      "price": 19.95,
+      "unit": "70 piece",
+      "normalPrice": 40.25,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/kueche/tabs-pulver-gel/p/7160973",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7160973_001.jpg?_=1790924118392"
+    },
+    {
+      "id": "7258373",
+      "name": "Omo Flüssig Universal 100 Waschgänge",
+      "price": 25.9,
+      "unit": "4.5 l",
+      "normalPrice": 51.8,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7258373",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7258373_001.jpg?_=1723450065621"
     },
     {
       "id": "3181044",
@@ -830,17 +819,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3933695_900.jpg?_=1792412018396"
     },
     {
-      "id": "7372624",
-      "name": "Swiffer Staubmagnet, Nachfüllung, 18 Stück",
-      "price": 14.95,
-      "unit": "18 piece",
-      "normalPrice": 26.1,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-42%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/schwaemme-lappen-buersten/staubfaenger/p/7372624",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7372624_001.jpg?_=1733837597234"
-    },
-    {
       "id": "3366609",
       "name": "Filippo Berio Olivenöl Cucinare",
       "price": 8.75,
@@ -863,37 +841,15 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3704083_001.jpg?_=1791790428860"
     },
     {
-      "id": "4065825",
-      "name": "Gehackte Tomaten 12x400g",
-      "price": 10.8,
-      "unit": "4800 g",
-      "normalPrice": 18,
+      "id": "7372624",
+      "name": "Swiffer Staubmagnet, Nachfüllung, 18 Stück",
+      "price": 14.95,
+      "unit": "18 piece",
+      "normalPrice": 26.1,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-40%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/konserven/gemuese/tomaten/p/4065825",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4065825_003.jpg?_=1714397285354"
-    },
-    {
-      "id": "6995914",
-      "name": "Tela Toilettenpapier Futura FSC 3-lagig 30 Rollen",
-      "price": 15.5,
-      "unit": "",
-      "normalPrice": 31,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/6995914",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6995914_001.jpg?_=1686121806012"
-    },
-    {
-      "id": "7517303",
-      "name": "Ariel Flüssig Universal 80 Waschgänge",
-      "price": 24.95,
-      "unit": "3.6 l",
-      "normalPrice": 51,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-51%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7517303",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7517303_L002.jpg?_=1773677603109"
+      "discount": "-42%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/schwaemme-lappen-buersten/staubfaenger/p/7372624",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7372624_001.jpg?_=1733837597234"
     },
     {
       "id": "3430492",
@@ -907,17 +863,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3430492_001.jpg?_=1617255809737"
     },
     {
-      "id": "7533669",
-      "name": "Tempo Smart WC Papier ohne Hülse 3-lagig 12 Rollen",
-      "price": 15.9,
-      "unit": "",
-      "normalPrice": 26.55,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-40%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7533669",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7533669_001.jpg?_=1780696469236"
-    },
-    {
       "id": "5650883",
       "name": "Eglifilets ohne Haut",
       "price": 8.3,
@@ -929,59 +874,26 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/5650883_001.jpg?_=1630544663165"
     },
     {
-      "id": "6558109",
-      "name": "Birra Moretti L’Autentica Lager 24x50cl",
-      "price": 31.5,
-      "unit": "12 l",
-      "normalPrice": 52.8,
+      "id": "4065825",
+      "name": "Gehackte Tomaten 12x400g",
+      "price": 10.8,
+      "unit": "4800 g",
+      "normalPrice": 18,
       "validUntil": "2026-10-25T22:00:00.000Z",
       "discount": "-40%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/bier/multipacks-ab-12x50cl/p/6558109",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6558109_001.jpg?_=1677657648542"
+      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/konserven/gemuese/tomaten/p/4065825",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4065825_003.jpg?_=1714397285354"
     },
     {
-      "id": "6016393",
-      "name": "Emmi Kaltbach Gruyère ca. 300g",
-      "price": 7.65,
-      "unit": "300 g",
-      "normalPrice": 9.6,
+      "id": "7517303",
+      "name": "Ariel Flüssig Universal 80 Waschgänge",
+      "price": 24.95,
+      "unit": "3.6 l",
+      "normalPrice": 51,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-20%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/hartkaese-halbhartkaese/sbrinz-parmesan-gruyere/p/6016393",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6016393_001.jpg?_=1792488243283"
-    },
-    {
-      "id": "3066215",
-      "name": "Natura-Beef Rindsragout",
-      "price": 6.95,
-      "unit": "200 g",
-      "normalPrice": 8.7,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-20%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/ihr-online-metzger/p/3066215",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3066215_001.jpg?_=1581454266918"
-    },
-    {
-      "id": "3153220",
-      "name": "Tuc Crackers Paprika",
-      "price": 1.3,
-      "unit": "100 g",
-      "normalPrice": 1.95,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-33%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/suesses-snacks/chips-snacks/salzgebaeck-flutes/cracker/p/3153220",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3153220_001.jpg?_=1738659257441"
-    },
-    {
-      "id": "3944231",
-      "name": "Kikkoman Sojasauce - 43% weniger Salz",
-      "price": 4.75,
-      "unit": "250 ml",
-      "normalPrice": 5.95,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-20%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/bouillons-gewuerze/fluessige-wuerze-pasten/p/3944231",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3944231_001.jpg?_=1581061953626"
+      "discount": "-51%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7517303",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7517303_L002.jpg?_=1773677603109"
     },
     {
       "id": "7554562",
@@ -995,26 +907,48 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7554562_001.jpg?_=1788246241055"
     },
     {
-      "id": "6817200",
-      "name": "Zewa Wisch & Weg Haushaltspapier dekor 16 Rollen",
-      "price": 13.9,
+      "id": "7533669",
+      "name": "Tempo Smart WC Papier ohne Hülse 3-lagig 12 Rollen",
+      "price": 15.9,
       "unit": "",
-      "normalPrice": 27.8,
+      "normalPrice": 26.55,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/6817200",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6817200_001.jpg?_=1738287682553"
+      "discount": "-40%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7533669",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7533669_001.jpg?_=1780696469236"
     },
     {
-      "id": "4249251",
-      "name": "Dorschrückenfilet Royale MSC",
-      "price": 11.6,
-      "unit": "200 g",
-      "normalPrice": 13.6,
+      "id": "3944231",
+      "name": "Kikkoman Sojasauce - 43% weniger Salz",
+      "price": 4.75,
+      "unit": "250 ml",
+      "normalPrice": 5.95,
       "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-14%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/fischtheke/p/4249251",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4249251_001.jpg?_=1761568764269"
+      "discount": "-20%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/bouillons-gewuerze/fluessige-wuerze-pasten/p/3944231",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3944231_001.jpg?_=1581061953626"
+    },
+    {
+      "id": "6995914",
+      "name": "Tela Toilettenpapier Futura FSC 3-lagig 30 Rollen",
+      "price": 15.5,
+      "unit": "",
+      "normalPrice": 31,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/6995914",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6995914_001.jpg?_=1686121806012"
+    },
+    {
+      "id": "4486638",
+      "name": "Barilla Tomatensauce Basilikum 3x400g",
+      "price": 7.2,
+      "unit": "1200 g",
+      "normalPrice": 9,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-20%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/pastasaucen-warme-saucen/pesto-pastasaucen/tomatensaucen-vegetarisch/p/4486638",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4486638_001.jpg?_=1744715126432"
     },
     {
       "id": "7368669",
@@ -1028,15 +962,81 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7368669_900.jpg?_=1754641395895"
     },
     {
-      "id": "4486638",
-      "name": "Barilla Tomatensauce Basilikum 3x400g",
-      "price": 7.2,
-      "unit": "1200 g",
-      "normalPrice": 9,
+      "id": "6016393",
+      "name": "Emmi Kaltbach Gruyère ca. 300g",
+      "price": 7.65,
+      "unit": "300 g",
+      "normalPrice": 9.6,
       "validUntil": "2026-10-25T22:00:00.000Z",
       "discount": "-20%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/pastasaucen-warme-saucen/pesto-pastasaucen/tomatensaucen-vegetarisch/p/4486638",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4486638_001.jpg?_=1744715126432"
+      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/hartkaese-halbhartkaese/sbrinz-parmesan-gruyere/p/6016393",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6016393_001.jpg?_=1792488243283"
+    },
+    {
+      "id": "4249251",
+      "name": "Dorschrückenfilet Royale MSC",
+      "price": 11.6,
+      "unit": "200 g",
+      "normalPrice": 13.6,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-14%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/fischtheke/p/4249251",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4249251_001.jpg?_=1761568764269"
+    },
+    {
+      "id": "6558109",
+      "name": "Birra Moretti L’Autentica Lager 24x50cl",
+      "price": 31.5,
+      "unit": "12 l",
+      "normalPrice": 52.8,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-40%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/bier/multipacks-ab-12x50cl/p/6558109",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6558109_001.jpg?_=1677657648542"
+    },
+    {
+      "id": "3066215",
+      "name": "Natura-Beef Rindsragout",
+      "price": 6.95,
+      "unit": "200 g",
+      "normalPrice": 8.7,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-20%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/ihr-online-metzger/p/3066215",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3066215_001.jpg?_=1581454266918"
+    },
+    {
+      "id": "6817200",
+      "name": "Zewa Wisch & Weg Haushaltspapier dekor 16 Rollen",
+      "price": 13.9,
+      "unit": "",
+      "normalPrice": 27.8,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/6817200",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6817200_001.jpg?_=1738287682553"
+    },
+    {
+      "id": "3153220",
+      "name": "Tuc Crackers Paprika",
+      "price": 1.3,
+      "unit": "100 g",
+      "normalPrice": 1.95,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-33%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/suesses-snacks/chips-snacks/salzgebaeck-flutes/cracker/p/3153220",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3153220_001.jpg?_=1738659257441"
+    },
+    {
+      "id": "1002156020",
+      "name": "Ripasso della Valpolicella DOC Rocca Alata",
+      "price": 6.95,
+      "unit": "750 ml",
+      "normalPrice": 9.95,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-30%",
+      "productUrl": "https://www.coop.ch/de/weine/alle-weine/rotweine/p/1002156020",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/1002156020_001.jpg?_=1761905646482"
     },
     {
       "id": "7444460",
@@ -1072,17 +1072,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3181465_900.jpg?_=1783922636253"
     },
     {
-      "id": "1002156020",
-      "name": "Ripasso della Valpolicella DOC Rocca Alata",
-      "price": 6.95,
-      "unit": "750 ml",
-      "normalPrice": 9.95,
-      "validUntil": "2026-10-25T22:00:00.000Z",
-      "discount": "-30%",
-      "productUrl": "https://www.coop.ch/de/weine/alle-weine/rotweine/p/1002156020",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/1002156020_001.jpg?_=1761905646482"
-    },
-    {
       "id": "3020178",
       "name": "Frucht Cocktail 3x  250g",
       "price": 2.95,
@@ -1092,6 +1081,28 @@
       "discount": "-21%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/konserven/fruechte/fruchtsalat-cocktails/p/3020178",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3020178_900.jpg?_=1659610207822"
+    },
+    {
+      "id": "3020188",
+      "name": "Birnen-hälften 3x  230g",
+      "price": 5.15,
+      "unit": "690 g",
+      "normalPrice": 6.3,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-18%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/konserven/fruechte/fruechte-kernobst/p/3020188",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3020188_900.jpg?_=1659610297275"
+    },
+    {
+      "id": "3066224",
+      "name": "Natura-Beef Rinds Hohrücken",
+      "price": 16,
+      "unit": "250 g",
+      "normalPrice": 20,
+      "validUntil": "2026-10-25T22:00:00.000Z",
+      "discount": "-20%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/ihr-online-metzger/p/3066224",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3066224_001.jpg?_=1581454279882"
     }
   ]
 }
