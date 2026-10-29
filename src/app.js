@@ -69,6 +69,7 @@ const CATEGORY_ICON = {
   'Fisch': 'fish',
   'Fleisch': 'beef',
   'Backen': 'wheat',
+  'Eingelegtes': 'leaf',
 };
 const PLACEHOLDER = {
   'Frühstück': ['#f6e7c8', '#efc98f'],
@@ -77,6 +78,7 @@ const PLACEHOLDER = {
   'Fisch': ['#d6e6ef', '#9cc3d8'],
   'Fleisch': ['#efd6d0', '#d39a8c'],
   'Backen': ['#eee1cf', '#cfb08a'],
+  'Eingelegtes': ['#e9e3f0', '#bfa8d6'],
 };
 function media(r, eager = false) {
   if (r.bild) {
@@ -171,6 +173,7 @@ const FILTERS = [
   { id: 'Geflügel', label: 'Poulet & Truten' },
   { id: 'Fisch', label: 'Fisch' },
   { id: 'Fleisch', label: 'Fleisch' },
+  { id: 'Eingelegtes', label: 'Eingelegtes' },
   { id: 'Vegetarisch', label: 'Vegetarisch' },
   { id: '_saison', label: 'Saisonal', icon: SEASON_ICON },
   { id: '_schnell', label: 'Schnell (bis 30 Min.)', icon: 'zap' },
