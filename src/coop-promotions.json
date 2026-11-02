@@ -1,7 +1,7 @@
 {
   "source": "swissgroceries-mcp",
   "chain": "coop",
-  "fetchedAt": "2026-11-02T10:53:41.698Z",
+  "fetchedAt": "2026-11-02T12:28:44.826Z",
   "count": 96,
   "offers": [
     {
@@ -709,17 +709,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3688753_001.jpg?_=1788177943100"
     },
     {
-      "id": "7160973",
-      "name": "Sun Brilliant Shine All-in-1 70 Caps",
-      "price": 19.95,
-      "unit": "70 piece",
-      "normalPrice": 40.25,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/kueche/tabs-pulver-gel/p/7160973",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7160973_001.jpg?_=1790924118392"
-    },
-    {
       "id": "7533670",
       "name": "Tempo Smart Soft WC Papier ohne Hülse 4-lagig 12 Rollen",
       "price": 15.9,
@@ -729,6 +718,17 @@
       "discount": "-43%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7533670",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7533670_001.jpg?_=1778493688997"
+    },
+    {
+      "id": "7160973",
+      "name": "Sun Brilliant Shine All-in-1 70 Caps",
+      "price": 19.95,
+      "unit": "70 piece",
+      "normalPrice": 40.25,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/reinigung-putzen/kueche/tabs-pulver-gel/p/7160973",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7160973_001.jpg?_=1790924118392"
     },
     {
       "id": "7517304",
@@ -786,6 +786,17 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3032094_001.jpg?_=1775544291162"
     },
     {
+      "id": "7258373",
+      "name": "Omo Flüssig Universal 100 Waschgänge",
+      "price": 25.9,
+      "unit": "4.5 l",
+      "normalPrice": 51.8,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7258373",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7258373_001.jpg?_=1723450065621"
+    },
+    {
       "id": "6378627",
       "name": "Naturaplan Bio Feigen 2x  200g",
       "price": 6.3,
@@ -806,17 +817,6 @@
       "discount": "-31%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/7421353",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7421353_001.jpg?_=1764628359856"
-    },
-    {
-      "id": "7258373",
-      "name": "Omo Flüssig Universal 100 Waschgänge",
-      "price": 25.9,
-      "unit": "4.5 l",
-      "normalPrice": 51.8,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7258373",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7258373_001.jpg?_=1723450065621"
     },
     {
       "id": "7258374",
@@ -874,17 +874,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4399891_001.jpg?_=1581378764452"
     },
     {
-      "id": "1001285023",
-      "name": "Zürich AOC Cuvée Blanc Prestige Staatsschreiber Staatskellerei Zürich",
-      "price": 13.55,
-      "unit": "750 ml",
-      "normalPrice": 16.95,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-20%",
-      "productUrl": "https://www.coop.ch/de/weine/alle-weine/weissweine/p/1001285023",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/1001285023_001.jpg?_=1771856009540"
-    },
-    {
       "id": "6817200",
       "name": "Zewa Wisch & Weg Haushaltspapier dekor 16 Rollen",
       "price": 14.5,
@@ -905,6 +894,17 @@
       "discount": "-50%",
       "productUrl": "https://www.coop.ch/de/baby-kind/pflege/pflegetuecher-fuer-baby-kind/feuchttuecher-fuer-baby-kind/p/7368669",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7368669_900.jpg?_=1754641395895"
+    },
+    {
+      "id": "1001285023",
+      "name": "Zürich AOC Cuvée Blanc Prestige Staatsschreiber Staatskellerei Zürich",
+      "price": 13.55,
+      "unit": "750 ml",
+      "normalPrice": 16.95,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-20%",
+      "productUrl": "https://www.coop.ch/de/weine/alle-weine/weissweine/p/1001285023",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/1001285023_001.jpg?_=1771856009540"
     },
     {
       "id": "4011939",
@@ -929,17 +929,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/1002156020_001.jpg?_=1761905646482"
     },
     {
-      "id": "6995914",
-      "name": "Tela Toilettenpapier Futura FSC 3-lagig 30 Rollen",
-      "price": 15.5,
-      "unit": "",
-      "normalPrice": 31,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/6995914",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6995914_001.jpg?_=1686121806012"
-    },
-    {
       "id": "7533669",
       "name": "Tempo Smart WC Papier ohne Hülse 3-lagig 12 Rollen",
       "price": 15.9,
@@ -949,6 +938,17 @@
       "discount": "-43%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7533669",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7533669_001.jpg?_=1780696469236"
+    },
+    {
+      "id": "6995914",
+      "name": "Tela Toilettenpapier Futura FSC 3-lagig 30 Rollen",
+      "price": 15.5,
+      "unit": "",
+      "normalPrice": 31,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/6995914",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6995914_001.jpg?_=1686121806012"
     },
     {
       "id": "6377058",
