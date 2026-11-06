@@ -1,8 +1,8 @@
 {
   "source": "swissgroceries-mcp",
   "chain": "coop",
-  "fetchedAt": "2026-11-05T12:24:57.655Z",
-  "count": 38,
+  "fetchedAt": "2026-11-06T12:09:03.558Z",
+  "count": 40,
   "offers": [
     {
       "id": "6495789",
@@ -104,6 +104,17 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7438622_001.jpg?_=1782333877699"
     },
     {
+      "id": "6817198",
+      "name": "Zewa Wisch & Weg Haushaltspapier weiss 16 Rollen",
+      "price": 14.5,
+      "unit": "",
+      "normalPrice": 29,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/6817198",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6817198_001.jpg?_=1737160647042"
+    },
+    {
       "id": "7399748",
       "name": "Hakle Pflegende Sauberkeit Kamille 4-lagig 24 Rollen",
       "price": 16.95,
@@ -203,17 +214,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4441686_900.jpg?_=1793274847786"
     },
     {
-      "id": "6413389",
-      "name": "Bio Gruyère AOP gerieben 2x  120g",
-      "price": 5.5,
-      "unit": "240 g",
-      "normalPrice": 6.7,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-17%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/reibkaese/p/6413389",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6413389_900.jpg?_=1749794026423"
-    },
-    {
       "id": "3438152",
       "name": "Schweinsfilet ca. 480g",
       "price": 12.45,
@@ -223,6 +223,17 @@
       "discount": "-40%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/schwein/p/3438152",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3438152_001.jpg?_=1695623587720"
+    },
+    {
+      "id": "6413389",
+      "name": "Bio Gruyère AOP gerieben 2x  120g",
+      "price": 5.5,
+      "unit": "240 g",
+      "normalPrice": 6.7,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-17%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/reibkaese/p/6413389",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6413389_900.jpg?_=1749794026423"
     },
     {
       "id": "7148851",
@@ -324,6 +335,28 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6658164_001.jpg?_=1780432037412"
     },
     {
+      "id": "7444120",
+      "name": "Oecoplan Goldmelisse white 3-lagig 32 Rollen",
+      "price": 18.95,
+      "unit": "",
+      "normalPrice": 26.5,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-28%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444120",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444120_001.jpg?_=1764629675687"
+    },
+    {
+      "id": "3020192",
+      "name": "Süssmais 6x285g",
+      "price": 3.9,
+      "unit": "1710 g",
+      "normalPrice": 7.8,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/konserven/gemuese/gemischte-gemuese/p/3020192",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3020192_001.jpg?_=1759930478297"
+    },
+    {
       "id": "3381386",
       "name": "Feldschlösschen Original Lager Bier 24x50cl",
       "price": 27.6,
@@ -346,17 +379,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3590538_900.jpg?_=1791179636068"
     },
     {
-      "id": "7148852",
-      "name": "Persil Kraft-Gel Color 80 Waschgänge",
-      "price": 24.95,
-      "unit": "3.6 l",
-      "normalPrice": 51,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-51%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/color/p/7148852",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7148852_001.jpg?_=1772748103216"
-    },
-    {
       "id": "6460763",
       "name": "Lachsfilets ASC",
       "price": 22.8,
@@ -366,17 +388,6 @@
       "discount": "-40%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/tiefgekuehlt/fleisch-fisch/fisch-meeresfruechte/ganze-fische-filets/p/6460763",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6460763_001.jpg?_=1783716278137"
-    },
-    {
-      "id": "3020192",
-      "name": "Süssmais 6x285g",
-      "price": 3.9,
-      "unit": "1710 g",
-      "normalPrice": 7.8,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/konserven/gemuese/gemischte-gemuese/p/3020192",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3020192_001.jpg?_=1759930478297"
     },
     {
       "id": "7609686",
@@ -390,6 +401,17 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7609686_001.jpg?_=1786599717401"
     },
     {
+      "id": "7148852",
+      "name": "Persil Kraft-Gel Color 80 Waschgänge",
+      "price": 24.95,
+      "unit": "3.6 l",
+      "normalPrice": 51,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-51%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/color/p/7148852",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7148852_001.jpg?_=1772748103216"
+    },
+    {
       "id": "7444459",
       "name": "Super Soft Prestige 4-lagig 32 Rollen",
       "price": 18.95,
@@ -401,17 +423,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444459_001.jpg?_=1759999434442"
     },
     {
-      "id": "7427023",
-      "name": "subito Haushaltspapier white long 12 Rollen",
-      "price": 12.4,
-      "unit": "",
-      "normalPrice": 17.85,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-30%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/7427023",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7427023_001.jpg?_=1772055653189"
-    },
-    {
       "id": "4922122",
       "name": "Prosecco DOC Vigne dei Dogi, extra dry",
       "price": 6.95,
@@ -421,6 +432,17 @@
       "discount": "-22%",
       "productUrl": "https://www.coop.ch/de/weine/alle-weine/schaumweine/italien/p/4922122",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4922122_001.jpg?_=1723449923619"
+    },
+    {
+      "id": "7427023",
+      "name": "subito Haushaltspapier white long 12 Rollen",
+      "price": 12.4,
+      "unit": "",
+      "normalPrice": 17.85,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-30%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/7427023",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7427023_001.jpg?_=1772055653189"
     }
   ]
 }
