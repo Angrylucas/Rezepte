@@ -1,8 +1,8 @@
 {
   "source": "swissgroceries-mcp",
   "chain": "coop",
-  "fetchedAt": "2026-11-06T12:09:03.558Z",
-  "count": 40,
+  "fetchedAt": "2026-11-07T11:06:06.997Z",
+  "count": 41,
   "offers": [
     {
       "id": "6495789",
@@ -115,17 +115,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6817198_001.jpg?_=1737160647042"
     },
     {
-      "id": "7399748",
-      "name": "Hakle Pflegende Sauberkeit Kamille 4-lagig 24 Rollen",
-      "price": 16.95,
-      "unit": "",
-      "normalPrice": 29.2,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-41%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7399748",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7399748_001.jpg?_=1747608201036"
-    },
-    {
       "id": "7317085",
       "name": "Süsskartoffeln Batati 1kg",
       "price": 3.95,
@@ -135,6 +124,17 @@
       "discount": "-42%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/wurzelgemuese/kartoffeln/p/7317085",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7317085_001.jpg?_=1728897452675"
+    },
+    {
+      "id": "7399748",
+      "name": "Hakle Pflegende Sauberkeit Kamille 4-lagig 24 Rollen",
+      "price": 16.95,
+      "unit": "",
+      "normalPrice": 29.2,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-41%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7399748",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7399748_001.jpg?_=1747608201036"
     },
     {
       "id": "6995915",
@@ -258,17 +258,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444458_001.jpg?_=1769480731655"
     },
     {
-      "id": "3081210",
-      "name": "Hirz Hüttenkäse Schnittlauch 1/4 Fett 2x  200g",
-      "price": 3.2,
-      "unit": "400 g",
-      "normalPrice": 4,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-20%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/frischkaese-mozzarella/huettenkaese/p/3081210",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3081210_900.jpg?_=1771224801496"
-    },
-    {
       "id": "6995916",
       "name": "Tela Viva Haushaltspapier FSC 16 Rollen",
       "price": 12.95,
@@ -278,6 +267,17 @@
       "discount": "-50%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/6995916",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6995916_001.jpg?_=1659608030834"
+    },
+    {
+      "id": "3081210",
+      "name": "Hirz Hüttenkäse Schnittlauch 1/4 Fett 2x  200g",
+      "price": 3.2,
+      "unit": "400 g",
+      "normalPrice": 4,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-20%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/frischkaese-mozzarella/huettenkaese/p/3081210",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3081210_900.jpg?_=1771224801496"
     },
     {
       "id": "3081651",
@@ -335,15 +335,15 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6658164_001.jpg?_=1780432037412"
     },
     {
-      "id": "7444120",
-      "name": "Oecoplan Goldmelisse white 3-lagig 32 Rollen",
-      "price": 18.95,
-      "unit": "",
-      "normalPrice": 26.5,
+      "id": "7609686",
+      "name": "Primagusto Trauben rot kernarm",
+      "price": 2.8,
+      "unit": "450 g",
+      "normalPrice": 3.5,
       "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-28%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444120",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444120_001.jpg?_=1764629675687"
+      "discount": "-20%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/trauben/p/7609686",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7609686_001.jpg?_=1786599717401"
     },
     {
       "id": "3020192",
@@ -357,6 +357,17 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3020192_001.jpg?_=1759930478297"
     },
     {
+      "id": "7444120",
+      "name": "Oecoplan Goldmelisse white 3-lagig 32 Rollen",
+      "price": 18.95,
+      "unit": "",
+      "normalPrice": 26.5,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-28%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444120",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444120_001.jpg?_=1764629675687"
+    },
+    {
       "id": "3381386",
       "name": "Feldschlösschen Original Lager Bier 24x50cl",
       "price": 27.6,
@@ -366,17 +377,6 @@
       "discount": "-40%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/bier/multipacks-ab-12x50cl/p/3381386",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3381386_001.jpg?_=1633413722913"
-    },
-    {
-      "id": "3590538",
-      "name": "Naturaplan Bio Mandeln gemahlen 2x  200g",
-      "price": 6.7,
-      "unit": "400 g",
-      "normalPrice": 8.4,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-20%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/backzutaten/klassische-backzutaten/nuesse/p/3590538",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3590538_900.jpg?_=1791179636068"
     },
     {
       "id": "6460763",
@@ -390,15 +390,26 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6460763_001.jpg?_=1783716278137"
     },
     {
-      "id": "7609686",
-      "name": "Primagusto Trauben rot kernarm",
-      "price": 2.8,
-      "unit": "450 g",
-      "normalPrice": 3.5,
+      "id": "3590538",
+      "name": "Naturaplan Bio Mandeln gemahlen 2x  200g",
+      "price": 6.7,
+      "unit": "400 g",
+      "normalPrice": 8.4,
       "validUntil": "2026-11-08T22:00:00.000Z",
       "discount": "-20%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/trauben/p/7609686",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7609686_001.jpg?_=1786599717401"
+      "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/backzutaten/klassische-backzutaten/nuesse/p/3590538",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3590538_900.jpg?_=1791179636068"
+    },
+    {
+      "id": "4484948",
+      "name": "Coca-Cola Zero 24x33cl",
+      "price": 13,
+      "unit": "7920 ml",
+      "normalPrice": 26,
+      "validUntil": "2026-11-08T22:00:00.000Z",
+      "discount": "-50%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/soft-drinks/multipacks-unter-1-liter/p/4484948",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4484948_001.jpg?_=1788759278973"
     },
     {
       "id": "7148852",
