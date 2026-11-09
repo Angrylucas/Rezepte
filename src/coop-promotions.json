@@ -1,8 +1,8 @@
 {
   "source": "swissgroceries-mcp",
   "chain": "coop",
-  "fetchedAt": "2026-11-08T11:19:01.090Z",
-  "count": 42,
+  "fetchedAt": "2026-11-09T10:53:38.226Z",
+  "count": 41,
   "offers": [
     {
       "id": "6495789",
@@ -10,7 +10,7 @@
       "price": 1.95,
       "unit": "1 kg",
       "normalPrice": 2.6,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-25%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/bananen/p/6495789",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6495789_001.jpg?_=1761806028575"
@@ -21,7 +21,7 @@
       "price": 2.1,
       "unit": "500 g",
       "normalPrice": 2.85,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-26%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/kohlgemuese/broccoli-blumenkohl/p/6675160",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6675160_001.jpg?_=1598953996076"
@@ -32,7 +32,7 @@
       "price": 5.95,
       "unit": "450 g",
       "normalPrice": 7.5,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/frischkaese-mozzarella/mozzarella-ricotta/p/3080329",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3080329_900.jpg?_=1789035829416"
@@ -43,7 +43,7 @@
       "price": 16.5,
       "unit": "",
       "normalPrice": 28,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-41%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/6346775",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6346775_001.jpg?_=1788211238307"
@@ -54,7 +54,7 @@
       "price": 3.2,
       "unit": "400 g",
       "normalPrice": 4,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/frischkaese-mozzarella/huettenkaese/p/3081176",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3081176_900.jpg?_=1771483400777"
@@ -65,7 +65,7 @@
       "price": 16.95,
       "unit": "",
       "normalPrice": 29.2,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-41%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/4098417",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4098417_001.jpg?_=1785225202717"
@@ -76,7 +76,7 @@
       "price": 8.85,
       "unit": "330 g",
       "normalPrice": 11.2,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/gefluegel/p/3560346",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3560346_001.jpg?_=1787203412863"
@@ -87,7 +87,7 @@
       "price": 8.95,
       "unit": "1000 g",
       "normalPrice": 13.75,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-34%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/charcuterie-wurstwaren/wuerste/wienerli-weisswuerste/p/3481749",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3481749_900.jpg?_=1791275023546"
@@ -98,7 +98,7 @@
       "price": 7.4,
       "unit": "400 g",
       "normalPrice": 8.4,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-11%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/hackfleisch/p/7438622",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7438622_001.jpg?_=1782333877699"
@@ -109,7 +109,7 @@
       "price": 14.5,
       "unit": "",
       "normalPrice": 29,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-50%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/6817198",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6817198_001.jpg?_=1737160647042"
@@ -120,7 +120,7 @@
       "price": 3.95,
       "unit": "1 kg",
       "normalPrice": 6.9,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-42%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/wurzelgemuese/kartoffeln/p/7317085",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7317085_001.jpg?_=1728897452675"
@@ -131,7 +131,7 @@
       "price": 16.95,
       "unit": "",
       "normalPrice": 29.2,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-41%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7399748",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7399748_001.jpg?_=1747608201036"
@@ -142,7 +142,7 @@
       "price": 15.5,
       "unit": "",
       "normalPrice": 31,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-50%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/6995915",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6995915_001.jpg?_=1717582656130"
@@ -153,7 +153,7 @@
       "price": 9.6,
       "unit": "4 kg",
       "normalPrice": 12,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/backzutaten/mehle/mehle/p/7089531",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7089531_900.jpg?_=1789721070282"
@@ -164,7 +164,7 @@
       "price": 7.8,
       "unit": "3 piece",
       "normalPrice": 13.05,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-40%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/papiertaschentuecher/taschentuecher/p/6818702",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6818702_001.jpg?_=1765289040888"
@@ -175,7 +175,7 @@
       "price": 5.95,
       "unit": "1000 ml",
       "normalPrice": 8.25,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-27%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/soft-drinks/bitter-tonic/p/3583055",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3583055_001.jpg?_=1791866197165"
@@ -186,7 +186,7 @@
       "price": 8.35,
       "unit": "3300 ml",
       "normalPrice": 11.95,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-30%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/bier/bier-im-multipack/p/6506979",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6506979_001.jpg?_=1677242315101"
@@ -197,7 +197,7 @@
       "price": 4.9,
       "unit": "800 g",
       "normalPrice": 6.9,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-28%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/wurzelgemuese/randen/p/4441686",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4441686_900.jpg?_=1793274847786"
@@ -208,7 +208,7 @@
       "price": 16.5,
       "unit": "",
       "normalPrice": 28,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-41%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/4489512",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4489512_001.jpg?_=1788212192889"
@@ -219,7 +219,7 @@
       "price": 5.5,
       "unit": "240 g",
       "normalPrice": 6.7,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-17%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/reibkaese/p/6413389",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6413389_900.jpg?_=1749794026423"
@@ -230,7 +230,7 @@
       "price": 12.45,
       "unit": "480 g",
       "normalPrice": 20.85,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-40%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/schwein/p/3438152",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3438152_001.jpg?_=1695623587720"
@@ -241,7 +241,7 @@
       "price": 24.95,
       "unit": "3.6 l",
       "normalPrice": 51,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-51%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7148851",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7148851_001.jpg?_=1772748964573"
@@ -252,21 +252,10 @@
       "price": 12.95,
       "unit": "",
       "normalPrice": 26,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-50%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/6995916",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6995916_001.jpg?_=1659608030834"
-    },
-    {
-      "id": "7444458",
-      "name": "Super Soft Sensation 3-lagig 32 Rollen",
-      "price": 18.95,
-      "unit": "",
-      "normalPrice": 26.5,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-28%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444458",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444458_001.jpg?_=1769480731655"
     },
     {
       "id": "3081651",
@@ -274,10 +263,21 @@
       "price": 6.2,
       "unit": "400 g",
       "normalPrice": 7.8,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/hartkaese-halbhartkaese/kaesescheiben/p/3081651",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3081651_900.jpg?_=1747637625039"
+    },
+    {
+      "id": "7444458",
+      "name": "Super Soft Sensation 3-lagig 32 Rollen",
+      "price": 18.95,
+      "unit": "",
+      "normalPrice": 26.5,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-28%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444458",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444458_001.jpg?_=1769480731655"
     },
     {
       "id": "3081210",
@@ -285,7 +285,7 @@
       "price": 3.2,
       "unit": "400 g",
       "normalPrice": 4,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/frischkaese-mozzarella/huettenkaese/p/3081210",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3081210_900.jpg?_=1771224801496"
@@ -296,7 +296,7 @@
       "price": 10.95,
       "unit": "750 ml",
       "normalPrice": 14.95,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-26%",
       "productUrl": "https://www.coop.ch/de/weine/alle-weine/schaumweine/italien/p/4027586",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4027586_001.jpg?_=1784579119630"
@@ -307,7 +307,7 @@
       "price": 10.2,
       "unit": "4 kg",
       "normalPrice": 12.8,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/backzutaten/mehle/mehle/p/3031309",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3031309_900.jpg?_=1789721011646"
@@ -318,7 +318,7 @@
       "price": 7.25,
       "unit": "42 piece",
       "normalPrice": 12.15,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-40%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/papiertaschentuecher/taschentuecher/p/3406440",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3406440_001.jpg?_=1793223764014"
@@ -329,43 +329,10 @@
       "price": 2.8,
       "unit": "450 g",
       "normalPrice": 3.5,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fruechte-gemuese/fruechte/trauben/p/7609686",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7609686_001.jpg?_=1786599717401"
-    },
-    {
-      "id": "6658164",
-      "name": "Betty Bossi Poulet-Delice CH",
-      "price": 4.85,
-      "unit": "300 g",
-      "normalPrice": 6.95,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-30%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/paniertes-pfannenfertiges/fleisch-fisch/p/6658164",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6658164_001.jpg?_=1780432037412"
-    },
-    {
-      "id": "3381386",
-      "name": "Feldschlösschen Original Lager Bier 24x50cl",
-      "price": 27.6,
-      "unit": "12 l",
-      "normalPrice": 46,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-40%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/bier/multipacks-ab-12x50cl/p/3381386",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3381386_001.jpg?_=1633413722913"
-    },
-    {
-      "id": "7444120",
-      "name": "Oecoplan Goldmelisse white 3-lagig 32 Rollen",
-      "price": 18.95,
-      "unit": "",
-      "normalPrice": 26.5,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-28%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444120",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444120_001.jpg?_=1764629675687"
     },
     {
       "id": "4484948",
@@ -373,10 +340,21 @@
       "price": 13,
       "unit": "7920 ml",
       "normalPrice": 26,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-50%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/getraenke/soft-drinks/multipacks-unter-1-liter/p/4484948",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4484948_001.jpg?_=1788759278973"
+    },
+    {
+      "id": "6658164",
+      "name": "Betty Bossi Poulet-Delice CH",
+      "price": 4.85,
+      "unit": "300 g",
+      "normalPrice": 6.95,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-30%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/paniertes-pfannenfertiges/fleisch-fisch/p/6658164",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6658164_001.jpg?_=1780432037412"
     },
     {
       "id": "6460763",
@@ -384,10 +362,21 @@
       "price": 22.8,
       "unit": "1000 g",
       "normalPrice": 38,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-40%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/tiefgekuehlt/fleisch-fisch/fisch-meeresfruechte/ganze-fische-filets/p/6460763",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6460763_001.jpg?_=1783716278137"
+    },
+    {
+      "id": "7444120",
+      "name": "Oecoplan Goldmelisse white 3-lagig 32 Rollen",
+      "price": 18.95,
+      "unit": "",
+      "normalPrice": 26.5,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-28%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444120",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444120_001.jpg?_=1764629675687"
     },
     {
       "id": "3590538",
@@ -395,7 +384,7 @@
       "price": 6.7,
       "unit": "400 g",
       "normalPrice": 8.4,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-20%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/backzutaten/klassische-backzutaten/nuesse/p/3590538",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3590538_900.jpg?_=1791179636068"
@@ -406,21 +395,10 @@
       "price": 3.9,
       "unit": "1710 g",
       "normalPrice": 7.8,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-50%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/vorraete/konserven/gemuese/gemischte-gemuese/p/3020192",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3020192_001.jpg?_=1759930478297"
-    },
-    {
-      "id": "7148852",
-      "name": "Persil Kraft-Gel Color 80 Waschgänge",
-      "price": 24.95,
-      "unit": "3.6 l",
-      "normalPrice": 51,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-51%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/color/p/7148852",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7148852_001.jpg?_=1772748103216"
     },
     {
       "id": "4922122",
@@ -428,10 +406,21 @@
       "price": 6.95,
       "unit": "750 ml",
       "normalPrice": 8.95,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-22%",
       "productUrl": "https://www.coop.ch/de/weine/alle-weine/schaumweine/italien/p/4922122",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4922122_001.jpg?_=1723449923619"
+    },
+    {
+      "id": "4331000",
+      "name": "Emmi Kaltbach Raclettekäse Scheiben 2x  300g",
+      "price": 15.5,
+      "unit": "600 g",
+      "normalPrice": 19.9,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-22%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/raclette-fondue/raclette/p/4331000",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4331000_900.jpg?_=1767765802846"
     },
     {
       "id": "7444459",
@@ -439,7 +428,7 @@
       "price": 18.95,
       "unit": "",
       "normalPrice": 26.5,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-28%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/7444459",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444459_001.jpg?_=1759999434442"
@@ -450,21 +439,21 @@
       "price": 11,
       "unit": "850 g",
       "normalPrice": 22.5,
-      "validUntil": "2026-11-08T22:00:00.000Z",
+      "validUntil": "2026-11-15T22:00:00.000Z",
       "discount": "-51%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/gefluegel/p/6363191",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6363191_001.jpg?_=1732287789061"
     },
     {
-      "id": "7498244",
-      "name": "Burger XXL Schmelzkäse Scheiben",
-      "price": 1.6,
-      "unit": "200 g",
-      "normalPrice": 3.25,
-      "validUntil": "2026-11-08T22:00:00.000Z",
-      "discount": "-50%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/schmelzkaese-bratkaese/p/7498244",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7498244_001.jpg?_=1789763789350"
+      "id": "7148852",
+      "name": "Persil Kraft-Gel Color 80 Waschgänge",
+      "price": 24.95,
+      "unit": "3.6 l",
+      "normalPrice": 51,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-51%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/color/p/7148852",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7148852_001.jpg?_=1772748103216"
     }
   ]
 }
