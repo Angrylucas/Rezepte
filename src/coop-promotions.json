@@ -1,8 +1,8 @@
 {
   "source": "swissgroceries-mcp",
   "chain": "coop",
-  "fetchedAt": "2026-11-09T10:53:38.226Z",
-  "count": 41,
+  "fetchedAt": "2026-11-09T12:55:14.524Z",
+  "count": 42,
   "offers": [
     {
       "id": "6495789",
@@ -203,17 +203,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4441686_900.jpg?_=1793274847786"
     },
     {
-      "id": "4489512",
-      "name": "Tempo Classic Toilettenpapier 3-lagig 24 Rollen 150 Blatt",
-      "price": 16.5,
-      "unit": "",
-      "normalPrice": 28,
-      "validUntil": "2026-11-15T22:00:00.000Z",
-      "discount": "-41%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/4489512",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4489512_001.jpg?_=1788212192889"
-    },
-    {
       "id": "6413389",
       "name": "Bio Gruyère AOP gerieben 2x  120g",
       "price": 5.5,
@@ -223,6 +212,17 @@
       "discount": "-17%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/reibkaese/p/6413389",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6413389_900.jpg?_=1749794026423"
+    },
+    {
+      "id": "4489512",
+      "name": "Tempo Classic Toilettenpapier 3-lagig 24 Rollen 150 Blatt",
+      "price": 16.5,
+      "unit": "",
+      "normalPrice": 28,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-41%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/toilettenpapier/toilettenpapier/p/4489512",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4489512_001.jpg?_=1788212192889"
     },
     {
       "id": "3438152",
@@ -236,17 +236,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3438152_001.jpg?_=1695623587720"
     },
     {
-      "id": "7148851",
-      "name": "Persil Kraft-Gel Universal 80 Waschgänge",
-      "price": 24.95,
-      "unit": "3.6 l",
-      "normalPrice": 51,
-      "validUntil": "2026-11-15T22:00:00.000Z",
-      "discount": "-51%",
-      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7148851",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7148851_001.jpg?_=1772748964573"
-    },
-    {
       "id": "6995916",
       "name": "Tela Viva Haushaltspapier FSC 16 Rollen",
       "price": 12.95,
@@ -256,6 +245,17 @@
       "discount": "-50%",
       "productUrl": "https://www.coop.ch/de/haushalt-tier/toiletten-haushaltpapier/haushaltspapier/p/6995916",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6995916_001.jpg?_=1659608030834"
+    },
+    {
+      "id": "7148851",
+      "name": "Persil Kraft-Gel Universal 80 Waschgänge",
+      "price": 24.95,
+      "unit": "3.6 l",
+      "normalPrice": 51,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-51%",
+      "productUrl": "https://www.coop.ch/de/haushalt-tier/waschen-textilpflege/waschmittel/universal-white/p/7148851",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7148851_001.jpg?_=1772748964573"
     },
     {
       "id": "3081651",
@@ -346,17 +346,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4484948_001.jpg?_=1788759278973"
     },
     {
-      "id": "6658164",
-      "name": "Betty Bossi Poulet-Delice CH",
-      "price": 4.85,
-      "unit": "300 g",
-      "normalPrice": 6.95,
-      "validUntil": "2026-11-15T22:00:00.000Z",
-      "discount": "-30%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/paniertes-pfannenfertiges/fleisch-fisch/p/6658164",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6658164_001.jpg?_=1780432037412"
-    },
-    {
       "id": "6460763",
       "name": "Lachsfilets ASC",
       "price": 22.8,
@@ -366,6 +355,17 @@
       "discount": "-40%",
       "productUrl": "https://www.coop.ch/de/lebensmittel/tiefgekuehlt/fleisch-fisch/fisch-meeresfruechte/ganze-fische-filets/p/6460763",
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6460763_001.jpg?_=1783716278137"
+    },
+    {
+      "id": "6658164",
+      "name": "Betty Bossi Poulet-Delice CH",
+      "price": 4.85,
+      "unit": "300 g",
+      "normalPrice": 6.95,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-30%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/paniertes-pfannenfertiges/fleisch-fisch/p/6658164",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6658164_001.jpg?_=1780432037412"
     },
     {
       "id": "7444120",
@@ -390,6 +390,17 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/3590538_900.jpg?_=1791179636068"
     },
     {
+      "id": "6363191",
+      "name": "Pouletbrust ca. 850g",
+      "price": 11,
+      "unit": "850 g",
+      "normalPrice": 22.5,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-51%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/gefluegel/p/6363191",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6363191_001.jpg?_=1732287789061"
+    },
+    {
       "id": "3020192",
       "name": "Süssmais 6x285g",
       "price": 3.9,
@@ -412,17 +423,6 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4922122_001.jpg?_=1723449923619"
     },
     {
-      "id": "4331000",
-      "name": "Emmi Kaltbach Raclettekäse Scheiben 2x  300g",
-      "price": 15.5,
-      "unit": "600 g",
-      "normalPrice": 19.9,
-      "validUntil": "2026-11-15T22:00:00.000Z",
-      "discount": "-22%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/raclette-fondue/raclette/p/4331000",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4331000_900.jpg?_=1767765802846"
-    },
-    {
       "id": "7444459",
       "name": "Super Soft Prestige 4-lagig 32 Rollen",
       "price": 18.95,
@@ -434,15 +434,26 @@
       "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7444459_001.jpg?_=1759999434442"
     },
     {
-      "id": "6363191",
-      "name": "Pouletbrust ca. 850g",
-      "price": 11,
-      "unit": "850 g",
-      "normalPrice": 22.5,
+      "id": "4331000",
+      "name": "Emmi Kaltbach Raclettekäse Scheiben 2x  300g",
+      "price": 15.5,
+      "unit": "600 g",
+      "normalPrice": 19.9,
       "validUntil": "2026-11-15T22:00:00.000Z",
-      "discount": "-51%",
-      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepacktes-frischfleisch/gefluegel/p/6363191",
-      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/6363191_001.jpg?_=1732287789061"
+      "discount": "-22%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/milchprodukte-eier/abgepackter-kaese/raclette-fondue/raclette/p/4331000",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/4331000_900.jpg?_=1767765802846"
+    },
+    {
+      "id": "7250192",
+      "name": "Dorschfilet Royal",
+      "price": 16.95,
+      "unit": "450 g",
+      "normalPrice": 29.9,
+      "validUntil": "2026-11-15T22:00:00.000Z",
+      "discount": "-43%",
+      "productUrl": "https://www.coop.ch/de/lebensmittel/fleisch-fisch/abgepackter-fisch/abgepackter-frischfisch/p/7250192",
+      "imageUrl": "https://www.coop.ch/img/produkte/310_310/RGB/7250192_001.jpg?_=1790802039986"
     },
     {
       "id": "7148852",
