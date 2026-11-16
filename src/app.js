@@ -166,6 +166,7 @@ const qtyText = (s) => [s.qty, s.unit].filter(Boolean).join(' ');
 
 const FILTERS = [
   { id: 'Hauptmahlzeit', label: 'Hauptmahlzeit' },
+  { id: 'Meal Prep', label: 'Meal Prep' },
   { id: 'Frühstück', label: 'Frühstück' },
   { id: 'Suppe', label: 'Suppen' },
   { id: 'Dessert', label: 'Dessert' },
